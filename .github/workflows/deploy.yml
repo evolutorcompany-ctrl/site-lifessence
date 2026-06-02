@@ -1,0 +1,25 @@
+name: 🚀 Deploy Lifessence
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy para Hostinger
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔑 Deploy via SSH — git pull no servidor
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            echo "🚀 Iniciando deploy em $(date)"
+            cd ${{ secrets.DEPLOY_PATH }}
+            git pull origin main
+            echo "✅ Deploy concluído em $(date)"

@@ -454,7 +454,7 @@ const LIFESSENCE = {
   contact: {
     whatsapp: "5454991234567",   // Substituir pelo número real
     phone: "(54) 9 9XXX-XXXX",  // Substituir pelo número real
-    email: "contato@lifessence.com.br",
+    email: "lifessence@lifessence.com.br",
     address: "Caxias do Sul – RS",
     hours: "Segunda a Sábado: 08:00 – 19:00",
     instagram: "https://www.instagram.com/lifessence/",

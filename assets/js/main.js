@@ -135,7 +135,7 @@
       const msg     = data.get('message') || '';
       const subject = encodeURIComponent(`Contato via site – ${name}`);
       const body    = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\n${msg}`);
-      window.location.href = `mailto:contato@lifessence.com.br?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:lifessence@lifessence.com.br?subject=${subject}&body=${body}`;
     }
 
     btn.textContent = orig;
