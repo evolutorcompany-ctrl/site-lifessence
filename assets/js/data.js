@@ -1,268 +1,192 @@
 /**
- * data.js — Dados estáticos do site Lifessence
- * Substitui: Advanced Custom Fields (ACF Pro), Custom Post Type UI,
- *            e todas as chamadas dinâmicas ao WordPress.
- * Extraído de: wp_postmeta.sql + wp_posts.sql (backup 2026-04-22)
+ * data.js — Dados do site Lifessence
+ * Encoding: UTF-8 (sem BOM)
+ * Atualizado: 2026-06
  */
 
 const LIFESSENCE = {
 
-  /* ── MÉDICOS / ESPECIALISTAS ─────────────────────────── */
+  /* ── PROFISSIONAIS DE SAÚDE ─────────────────────────────── */
   doctors: [
     {
       id: 39543,
       name: "Lucas Pezzi",
       slug: "lucas-pezzi",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/9.png",
+      photo: "assets/images/professionals/lucas-pezzi.png",
       specialty: "Psicólogo",
-      certifications: "Graduação em Psicologia – UCS (2008). Especialização em Terapia Cognitivo-Comportamental – UFRGS (2010). Atuação em Psicoterapia Infantil e Adolescência.",
-      education: "Psicoterapia individual com base na Terapia Cognitivo-Comportamental. Atendimento especializado para infância e adolescência. Intervenção terapêutica para ansiedade, depressão e transtornos emocionais.",
-      experience: "Sessões personalizadas, de acordo com as necessidades do paciente. Uso de técnicas da Terapia Cognitivo-Comportamental para promover mudanças nos padrões de pensamento e comportamento.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      certifications: "Lucas Pezzi é psicólogo especializado em Terapia Cognitivo-Comportamental (TCC), com ampla experiência no atendimento a crianças, adolescentes, adultos e pessoas em tratamento para dependência química. Acredita na psicoterapia como um caminho para a mudança e desenvolvimento pessoal, utilizando uma abordagem estruturada e baseada em evidências para ajudar seus pacientes a superarem desafios emocionais e comportamentais.",
+      education: "Psicoterapia individual com base na Terapia Cognitivo-Comportamental (TCC). Atendimento especializado para infância e adolescência. Intervenção terapêutica para ansiedade, depressão e transtornos emocionais.",
+      experience: "Sessões personalizadas de acordo com as necessidades do paciente. Uso de técnicas da TCC para promover mudanças nos padrões de pensamento e comportamento.",
+      services: ["psicologia"],
+      pageUrl: "especialista.html?slug=lucas-pezzi"
     },
     {
       id: 39555,
       name: "Maira Tonetta",
       slug: "maira-tonetta",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/8.png",
+      photo: "assets/images/professionals/maira-tonetta.png",
       specialty: "Fisioterapeuta | Osteopata",
-      certifications: "Fisioterapia: Graduação pela UFRGS (2015). Osteopatia: Especialização pelo Instituto Brasileiro de Osteopatia (OIA – Bélgica).",
-      education: "Atendimento baseado em princípios osteopáticos, com foco na avaliação e condução dos tratamentos conforme as necessidades individuais.",
-      experience: "Maira trabalha com métodos que unem sua sólida formação acadêmica e a prática clínica. Sua condução dos tratamentos é orientada pela análise individual de cada paciente.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      certifications: "Maira Canez Tonetta reúne formação e experiência prática na área da saúde. Com atuação de 4 anos em reabilitação e 8 anos em pilates, ela integra os conhecimentos adquiridos na formação em Fisioterapia pela Universidade Federal do Rio Grande do Sul (UFRGS) e na especialização em Osteopatia pelo Instituto Brasileiro de Osteopatia (OIA – Bélgica).",
+      education: "Atendimento baseado em princípios osteopáticos, com foco na avaliação e condução dos tratamentos conforme as necessidades individuais de cada paciente.",
+      experience: "Maira trabalha com métodos que unem sólida formação acadêmica e prática clínica. Sua condução dos tratamentos é orientada pela análise individualizada de cada caso.",
+      services: ["osteopatia"],
+      pageUrl: "especialista.html?slug=maira-tonetta"
     },
     {
       id: 39556,
       name: "Sabrina Stapasolla",
       slug: "sabrina-stapasolla",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/3-1.png",
-      specialty: "Esteticista | Cosmetóloga",
-      certifications: "Esteticista e cosmetóloga. Especialização em procedimentos faciais e corporais avançados.",
-      education: "Procedimentos faciais e corporais como toxina botulínica, preenchimentos faciais, bioestimuladores de colágeno, peelings de diamante e químico, limpeza de pele profunda.",
-      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente. A abordagem personalizada permite alcançar resultados naturais e compatíveis com as necessidades individuais.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/sabrina-stapasolla.png",
+      specialty: "Fisioterapeuta | Osteopata",
+      certifications: "Sabrina atua com terapias manuais desde 2006. Formada em Fisioterapia e em Osteopatia pelo Instituto Brasileiro de Osteopatia (OIA – Bélgica), ela integra sua prática com conhecimentos que fortalecem a condução dos tratamentos. Como idealizadora da Clínica Lifessence, ela contribui para a estruturação de um espaço voltado à promoção da saúde e do bem-estar.",
+      education: "Atendimento fisioterapêutico e osteopático com abordagem integrativa. Técnicas manuais, mobilização articular e reabilitação funcional personalizada.",
+      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, combinando fisioterapia convencional e princípios osteopáticos.",
+      services: ["osteopatia"],
+      pageUrl: "especialista.html?slug=sabrina-stapasolla"
     },
     {
       id: 39558,
       name: "Raquel Giovanella",
       slug: "raquel-giovanella",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/4-1.png",
-      specialty: "Estética Avançada",
-      certifications: "Especialização em Estética Clínica e procedimentos faciais e corporais.",
-      education: "Tratamentos faciais e corporais personalizados. Procedimentos estéticos avançados com foco em resultados naturais.",
-      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/raquel-giovanella.png",
+      specialty: "Esteticista | Especialista em Estética Avançada",
+      certifications: "Raquel Giovanella oferece tratamentos estéticos voltados para a revitalização da pele e a harmonização facial. Seus procedimentos utilizam tecnologias e técnicas especializadas para promover resultados seguros e eficazes.",
+      education: "Tratamentos faciais e corporais personalizados. Procedimentos estéticos avançados com foco em resultados naturais e seguros.",
+      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, priorizando resultados naturais e duradouros.",
+      services: ["estetica-avancada"],
+      pageUrl: "especialista.html?slug=raquel-giovanella"
     },
     {
       id: 39559,
       name: "Francielle Domingues",
       slug: "francielle-domingues",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/Fotos-Lifessence.png",
+      photo: "assets/images/professionals/francielle-domingues.png",
       specialty: "Professora de Yoga | Reiki",
-      certifications: "Professora de Yoga e meditação, com práticas fluídas e meditativas baseadas no Hatha, Vinyasa, Tantra e Vibracional. Ministrante de cursos de Reiki nos níveis I, II e III. Graduanda em Psicologia pela FSG.",
-      education: "Yoga Personalizado: Aulas individuais adaptadas às necessidades e objetivos do aluno. Práticas fluídas e meditativas: Métodos do Hatha, Vinyasa, Tantra e Vibracional para equilíbrio físico, mental e emocional.",
-      experience: "Atendimento Personalizado: As aulas são estruturadas conforme o nível e os objetivos do aluno. Flexibilidade de Local: As práticas podem ser realizadas em domicílio ou em espaço adequado.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      certifications: "Francielle Teixeira Domingues é uma profissional dedicada ao equilíbrio integral do ser, unindo técnicas corporais, meditativas e energéticas para promover bem-estar e autoconhecimento. Acredita que a transformação pessoal ocorre por meio da conexão entre corpo e mente, utilizando abordagens como Yoga, meditação e Reiki para guiar seus alunos em um caminho de maior consciência e harmonia.",
+      education: "Aulas individuais de Yoga adaptadas às necessidades e objetivos do aluno. Práticas fluídas e meditativas para equilíbrio físico, mental e emocional.",
+      experience: "Atendimento personalizado com aulas estruturadas conforme o nível e os objetivos do aluno. As práticas podem ser realizadas em domicílio ou em espaço adequado.",
+      services: ["yoga"],
+      pageUrl: "especialista.html?slug=francielle-domingues"
     },
     {
       id: 39562,
       name: "Lídia Castilhos",
       slug: "lidia-castilhos",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/10-1.png",
+      photo: "assets/images/professionals/lidia-castilhos.png",
       specialty: "Podologista",
-      certifications: "Formação técnica em Podologia pela UCS. Graduação em Economia pela UCS.",
-      education: "Podologia: Avaliação e tratamento de condições podológicas. Tratamento com laser para micose nas unhas. Procedimentos para correção de unha encravada.",
-      experience: "A atuação de Lídia é fundamentada em conhecimentos técnicos adquiridos durante sua formação. A prática clínica orienta-se pela análise cuidadosa de cada caso.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      certifications: "Lídia Castilhos possui formação técnica em Podologia pela UCS e graduação em Economia pela mesma instituição. Sua prática é voltada para a aplicação de métodos técnicos na avaliação e tratamento das condições dos pés.",
+      education: "Avaliação e tratamento de condições podológicas. Tratamento com laser para micose nas unhas. Procedimentos para correção de unha encravada e calosidades.",
+      experience: "Atuação fundamentada em conhecimentos técnicos adquiridos durante sua formação. A prática clínica é orientada pela análise cuidadosa de cada caso.",
+      services: ["podologia"],
+      pageUrl: "especialista.html?slug=lidia-castilhos"
     },
     {
       id: 39563,
       name: "Gabrielly Rodrigues",
       slug: "gabrielly-rodrigues",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/1-1.png",
+      photo: "assets/images/professionals/gabrielly-rodrigues.png",
       specialty: "Biomédica | Acupunturista",
-      certifications: "Graduação em Biomedicina – Ênfase em Patologia Clínica. Pós-graduação em Acupuntura – UCS em parceria com a ABA. Pós-graduação em Saúde Estética – FSG.",
+      certifications: "Gabrielly iniciou sua trajetória em 2013, atuando na área administrativa de um hospital, experiência que ampliou sua visão sobre o setor da saúde. Em 2016 passou a trabalhar como técnica em enfermagem e, paralelamente, iniciou os estudos em Biomedicina. Formada em 2020 com ênfase em Patologia Clínica, ampliou suas possibilidades ao se especializar em Acupuntura por meio da Associação Brasileira de Acupuntura – ABA. Sua formação também inclui uma pós-graduação em Saúde Estética, reforçando sua prática integrativa.",
       education: "A acupuntura é uma prática da medicina tradicional chinesa que utiliza agulhas finas para estimular pontos específicos do corpo, promovendo equilíbrio energético, alívio da dor e bem-estar.",
-      experience: "A prática de Gabrielly baseia-se na compreensão individualizada do paciente, utilizando os conhecimentos adquiridos ao longo de sua formação para contribuir com o equilíbrio e o bem-estar.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      experience: "Prática baseada na compreensão individualizada do paciente, utilizando os conhecimentos adquiridos ao longo da formação para contribuir com o equilíbrio e o bem-estar.",
+      services: ["acupuntura"],
+      pageUrl: "especialista.html?slug=gabrielly-rodrigues"
     },
     {
       id: 39564,
       name: "Carolina Nazzari",
       slug: "carolina-nazzari",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/13-1.png",
+      photo: "assets/images/professionals/carolina-nazzari.png",
       specialty: "Fisioterapeuta",
-      certifications: "Formação acadêmica em Fisioterapia (2016). Pós-graduação em Fisioterapia Manipulativa (técnicas manuais) 2018. Pilates.",
+      certifications: "Carolina Nazzari é fisioterapeuta formada desde 2016, com pós-graduação em Fisioterapia Manipulativa (técnicas manuais) concluída em 2018. Possui formação complementar em Pilates e diversos cursos voltados para técnicas manuais, liberação miofascial e movimentos funcionais. Seu atendimento é voltado para a recuperação e prevenção de disfunções musculoesqueléticas, promovendo a qualidade de vida por meio de abordagens terapêuticas adaptadas à necessidade de cada paciente.",
       education: "Atendimento personalizado com técnicas como ventosaterapia, agulhamento seco, terapias manuais e eletroterapia. Inclui fisioterapia desportiva para prevenção e tratamento de lesões.",
-      experience: "O atendimento é estruturado para oferecer soluções eficientes e personalizadas, combinando técnicas variadas conforme a necessidade de cada paciente.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      experience: "Atendimento estruturado para oferecer soluções eficientes e personalizadas, combinando técnicas variadas conforme a necessidade de cada paciente.",
+      services: ["fisioterapia-esportiva"],
+      pageUrl: "especialista.html?slug=carolina-nazzari"
     },
     {
       id: 39565,
       name: "Emanuele Rizzon",
       slug: "emanuele-rizzon",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/11.png",
-      specialty: "Fisioterapeuta | Pilates",
-      certifications: "Graduação em Fisioterapia pelo Centro Universitário da Serra Gaúcha (2017).",
-      education: "Pilates Solo com Acessórios e Equipamentos. Fisioterapia: Indicada para reabilitação pós-lesão, dores musculoesqueléticas e condicionamento físico.",
-      experience: "Os atendimentos são adaptados às necessidades de cada paciente, proporcionando um cuidado direcionado e eficaz para a reabilitação e fortalecimento do corpo.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/emanuele-rizzon.png",
+      specialty: "Fisioterapeuta | Instrutora de Pilates",
+      certifications: "Emanuele Rizzon oferece atendimento voltado à recuperação funcional, utilizando técnicas fisioterapêuticas que promovem equilíbrio muscular e melhora da mobilidade. Suas abordagens são indicadas tanto para reabilitação quanto para fortalecimento e prevenção de dores e lesões.",
+      education: "Pilates Solo com Acessórios e Equipamentos. Fisioterapia indicada para reabilitação pós-lesão, dores musculoesqueléticas e condicionamento físico.",
+      experience: "Atendimentos adaptados às necessidades de cada paciente, proporcionando cuidado direcionado e eficaz para a reabilitação e fortalecimento do corpo.",
+      services: ["pilates"],
+      pageUrl: "especialista.html?slug=emanuele-rizzon"
     },
     {
       id: 39569,
       name: "Priscila Pail",
       slug: "priscila-pail",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/5-1.png",
+      photo: "assets/images/professionals/priscila-pail.png",
       specialty: "Esteticista | Cosmetóloga",
-      certifications: "Esteticista e cosmetóloga formada pela ULBRA Canoas. Doutora em biologia celular e molecular pela PUCRS. Professora universitária desde 2013.",
-      education: "Tratamentos faciais (clareamento, rugas, flacidez de pele, acne, limpeza de pele, botox, bioestimuladores de colágeno, preenchimento, fios de PDO). Tratamentos corporais (celulite, gordura localizada, flacidez).",
-      experience: "A prática de Priscila integra conhecimentos teóricos e práticos adquiridos em sua formação acadêmica e contínua atualização profissional.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      certifications: "Esteticista e cosmetóloga formada pela ULBRA Canoas. Doutora em Biologia Celular e Molecular pela PUCRS. Professora universitária desde 2013, com ampla experiência em procedimentos estéticos faciais e corporais.",
+      education: "Tratamentos faciais (clareamento, rugas, flacidez, acne, limpeza de pele, toxina botulínica, bioestimuladores de colágeno, preenchimento, fios de PDO). Tratamentos corporais (celulite, gordura localizada, flacidez).",
+      experience: "Prática que integra conhecimentos teóricos e práticos adquiridos na formação acadêmica e na contínua atualização profissional.",
+      services: ["estetica-avancada"],
+      pageUrl: "especialista.html?slug=priscila-pail"
     },
     {
       id: 39570,
       name: "Ana Carolina Alende",
       slug: "ana-carolina",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/14-1.png",
-      specialty: "Fisioterapeuta Pélvica | Pilates",
-      certifications: "Fisioterapeuta formada pela ULBRA (2021). Pilates pelo Instituto Golden em Porto Alegre/RS. Pós-graduanda em Fisioterapia na Saúde da Mulher.",
-      education: "Fisioterapia Pélvica: Avaliação e condução de tratamentos direcionados à saúde pélvica. Pilates: Sessões orientadas para o fortalecimento, mobilidade e equilíbrio.",
-      experience: "A prática de Ana Carolina integra conhecimentos teóricos e práticos adquiridos em sua formação acadêmica e contínua atualização profissional.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/ana-carolina-alende.png",
+      specialty: "Fisioterapeuta Pélvica | Instrutora de Pilates",
+      certifications: "Ana Carolina Alende é formada em Fisioterapia pela Universidade Luterana do Brasil – Campus Santa Maria (2021) e possui formação em Pilates pelo Instituto Golden, em Porto Alegre/RS. Atualmente, realiza pós-graduação em Fisioterapia na Saúde da Mulher na Faculdade Dom Alberto de Santa Cruz/RS. Sua atuação se concentra na prática clínica fundamentada em abordagens específicas para a saúde pélvica e no aprimoramento dos métodos do Pilates.",
+      education: "Fisioterapia Pélvica com avaliação e condução de tratamentos direcionados à saúde pélvica feminina. Pilates com sessões orientadas para fortalecimento, mobilidade e equilíbrio.",
+      experience: "Prática que integra conhecimentos teóricos e práticos com contínua atualização profissional, com foco na saúde integral da mulher.",
+      services: ["fisioterapia-pelvica", "pilates"],
+      pageUrl: "especialista.html?slug=ana-carolina"
     },
     {
       id: 39572,
       name: "Amanda Arruda",
       slug: "amanda-arruda",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/09/15-1.png",
-      specialty: "Fisioterapeuta | Pilates",
-      certifications: "Graduação em Fisioterapia pela Universidade Franciscana de Santa Maria (2018).",
-      education: "Pilates: Exercícios que melhoram a postura, aumentam a flexibilidade e fortalecem a musculatura, promovendo o alinhamento corporal e prevenindo dores e lesões.",
-      experience: "Cada sessão é estruturada conforme a necessidade do paciente, proporcionando um acompanhamento individualizado para alcançar melhores resultados.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
-    },
-    {
-      id: 40757,
-      name: "Mariana Zenato",
-      slug: "mariana",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/12/Foto-3.jpg",
-      specialty: "Nutricionista",
-      certifications: "Pós-graduada em Comportamento Alimentar em Emagrecimento Consciente.",
-      education: "Auxiliar no desenvolvimento de um comportamento alimentar harmônico, promovendo uma relação mais leve e consciente entre o paciente e os alimentos.",
-      experience: "Mariana atua com foco em resultados reais e duradouros, sem dietas restritivas ou promessas milagrosas. Seu trabalho é pautado na ciência, no acolhimento e na construção de um estilo de vida saudável.",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
-    },
+      photo: "assets/images/professionals/amanda-arruda.png",
+      specialty: "Fisioterapeuta | Instrutora de Pilates",
+      certifications: "Amanda Arruda atua na promoção da saúde e qualidade de vida por meio do Pilates, auxiliando na reabilitação, fortalecimento muscular e alinhamento postural. Seus atendimentos são voltados para pessoas que buscam mais equilíbrio e consciência corporal.",
+      education: "Pilates: exercícios que melhoram a postura, aumentam a flexibilidade e fortalecem a musculatura, promovendo alinhamento corporal e prevenindo dores e lesões.",
+      experience: "Cada sessão é estruturada conforme a necessidade do paciente, proporcionando acompanhamento individualizado para alcançar os melhores resultados.",
+      services: ["pilates"],
+      pageUrl: "especialista.html?slug=amanda-arruda"
+    }
+  ],
+
+  /* ── EQUIPE ADMINISTRATIVA ──────────────────────────────── */
+  team: [
     {
       id: 40761,
       name: "Clarice",
       slug: "clarice",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/12/Foto-5.jpg",
-      specialty: "Especialista",
-      certifications: "",
-      education: "",
-      experience: "",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/clarice.jpg",
+      role: "Secretária",
+      isAdmin: true
     },
     {
       id: 40764,
       name: "Milena",
       slug: "milena",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/12/Foto-4.jpg",
-      specialty: "Especialista",
-      certifications: "",
-      education: "",
-      experience: "",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/milena.jpg",
+      role: "Secretária",
+      isAdmin: true
     },
     {
       id: 40767,
       name: "Yasmin",
       slug: "yasmin",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/12/Foto-6.jpg",
-      specialty: "Especialista",
-      certifications: "",
-      education: "",
-      experience: "",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/yasmin.jpg",
+      role: "Auxiliar Administrativa",
+      isAdmin: true
     },
     {
       id: 40769,
       name: "Hadassa",
       slug: "hadassa",
-      photo: "https://lifessence.com.br/wp-content/uploads/2025/12/Foto-7.jpg",
-      specialty: "Especialista",
-      certifications: "",
-      education: "",
-      experience: "",
-      quote: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      email: ""
+      photo: "assets/images/professionals/hadassa.jpg",
+      role: "Auxiliar Administrativa",
+      isAdmin: true
     }
   ],
 
@@ -272,133 +196,171 @@ const LIFESSENCE = {
       id: 39514,
       name: "Pilates",
       slug: "pilates",
-      description: "Conecte corpo e mente com exercícios que respeitam seus limites e promovem equilíbrio.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/03/Foto-12.jpg",
-      icon: "https://lifessence.com.br/wp-content/uploads/2024/10/Pilates.svg"
+      description: "Conecte corpo e mente com exercícios que respeitam seus limites e promovem equilíbrio, postura e bem-estar duradouro.",
+      longDescription: "O Pilates é um método de exercícios que trabalha o fortalecimento muscular, a flexibilidade e a consciência corporal. Indicado para todas as idades e condições físicas, promove melhora da postura, alívio de dores e qualidade de vida.",
+      benefits: ["Melhora da postura e alinhamento corporal", "Fortalecimento muscular profundo", "Aumento de flexibilidade e mobilidade", "Alívio de dores musculoesqueléticas", "Prevenção e reabilitação de lesões"],
+      faqs: [
+        { q: "O Pilates é indicado para quem sente dores nas costas?", a: "Sim! O Pilates é um dos métodos mais recomendados para aliviar dores na coluna, pois fortalece a musculatura e melhora a postura, reduzindo o impacto nas articulações." },
+        { q: "Em quanto tempo começo a sentir os resultados?", a: "Os primeiros benefícios podem ser percebidos em poucas semanas. No entanto, o tempo varia de pessoa para pessoa, dependendo da frequência das aulas e das condições individuais." },
+        { q: "O Pilates é seguro para todas as idades?", a: "Sim! Com a orientação correta, o Pilates pode ser praticado por pessoas de todas as idades, desde jovens até idosos, adaptando-se às necessidades individuais de cada aluno." }
+      ],
+      image: "assets/images/services/pilates.jpg",
+      icon: "assets/images/icons/Pilates.svg",
+      professionals: ["emanuele-rizzon", "amanda-arruda", "ana-carolina"],
+      pageUrl: "servico.html?slug=pilates"
     },
     {
       id: 39129,
       name: "Fisioterapia Esportiva",
       slug: "fisioterapia-esportiva",
-      description: "Reabilitação e prevenção de lesões esportivas com atendimento especializado.",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/9-2_11zon.webp",
-      icon: "https://lifessence.com.br/wp-content/uploads/2024/10/Fisioterapia-Esportiva.svg"
+      description: "Reabilitação e prevenção de lesões esportivas com atendimento especializado e protocolos baseados em evidências.",
+      longDescription: "A Fisioterapia Esportiva é voltada ao tratamento e prevenção de lesões decorrentes da prática esportiva. Combina técnicas como agulhamento seco, ventosaterapia, terapias manuais e eletroterapia para uma recuperação eficiente.",
+      benefits: ["Tratamento de lesões musculares e articulares", "Prevenção de lesões no esporte", "Reabilitação pós-cirúrgica", "Melhora do desempenho atlético", "Agulhamento seco e ventosaterapia"],
+      faqs: [
+        { q: "Quais tipos de lesões e dores a fisioterapia esportiva pode tratar?", a: "A fisioterapia esportiva atua no alívio das dores musculares, na reabilitação de lesões e na melhora da mobilidade, ajudando a prevenir novos problemas e permitindo que você retome seus treinos com segurança." },
+        { q: "Como funciona o processo de reabilitação?", a: "O tratamento começa com uma avaliação detalhada para identificar a origem das dores e lesões. A partir daí, são aplicadas técnicas personalizadas que restauram a função do seu corpo e promovem uma recuperação gradual e eficaz." },
+        { q: "Em quanto tempo posso começar a notar os benefícios?", a: "Embora os resultados variem de acordo com cada caso, muitos atletas já percebem alívio e uma melhora na mobilidade logo nas primeiras sessões, o que ajuda a reconstruir a confiança e a segurança em seus movimentos." }
+      ],
+      image: "assets/images/services/fisioterapia-esportiva.webp",
+      icon: "assets/images/icons/Fisioterapia-Esportiva.svg",
+      professionals: ["carolina-nazzari"],
+      pageUrl: "servico.html?slug=fisioterapia-esportiva"
     },
     {
       id: 39176,
       name: "Osteopatia",
       slug: "osteopatia",
-      description: "Técnicas manuais para tratar disfunções do sistema musculoesquelético de forma holística.",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/3-6_11zon.webp",
-      icon: null
-    },
-    {
-      id: 39501,
-      name: "Estética Facial",
-      slug: "estetica-facial",
-      description: "Tratamentos faciais avançados para realçar sua beleza natural com segurança e eficácia.",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/12/Foto-13.jpg",
-      icon: null
+      description: "Técnicas manuais para tratar disfunções do sistema musculoesquelético de forma holística, respeitando a autocura do organismo.",
+      longDescription: "A Osteopatia é uma abordagem terapêutica manual que busca identificar e tratar desequilíbrios estruturais e funcionais do corpo. Parte do princípio de que o organismo tem capacidade de autocura quando em equilíbrio.",
+      benefits: ["Tratamento de dores crônicas e agudas", "Melhora da mobilidade articular", "Equilíbrio do sistema musculoesquelético", "Abordagem holística e não-invasiva", "Prevenção de recorrência de lesões"],
+      faqs: [
+        { q: "Quais tipos de desconforto a osteopatia pode tratar?", a: "A osteopatia é eficaz para aliviar dores musculares, rigidez nas articulações, desconfortos pós-lesões e outros sinais de desequilíbrio corporal que comprometem sua qualidade de vida." },
+        { q: "Como funciona o tratamento osteopático?", a: "O tratamento envolve técnicas manuais suaves que estimulam a mobilidade e a regeneração dos tecidos, promovendo a restauração do equilíbrio do seu corpo de maneira natural e progressiva." },
+        { q: "Em quanto tempo posso começar a sentir os benefícios?", a: "Os resultados variam de pessoa para pessoa, mas muitos já relatam uma sensação de alívio e melhoria na mobilidade nas primeiras consultas, incentivando a continuidade do tratamento para resultados mais duradouros." }
+      ],
+      image: "assets/images/services/osteopatia.webp",
+      icon: "assets/images/icons/Osteopatia.svg",
+      professionals: ["maira-tonetta", "sabrina-stapasolla"],
+      pageUrl: "servico.html?slug=osteopatia"
     },
     {
       id: 39502,
       name: "Fisioterapia Pélvica",
       slug: "fisioterapia-pelvica",
       description: "Cuidado especializado para a saúde pélvica feminina e masculina em todas as fases da vida.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/03/Foto-11.jpg",
-      icon: null
-    },
-    {
-      id: 39507,
-      name: "Medicina de Família",
-      slug: "medicina-de-familia",
-      description: "Atendimento médico integral com foco no cuidado longitudinal e bem-estar de toda a família.",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/Foto-Amanda-Costa-1_11zon.webp",
-      icon: null
+      longDescription: "A Fisioterapia Pélvica trata condições relacionadas ao assoalho pélvico, como incontinência urinária, disfunções sexuais, dores pélvicas e preparação para o parto.",
+      benefits: ["Tratamento de incontinência urinária", "Preparação para o parto e pós-parto", "Tratamento de dores pélvicas", "Fortalecimento do assoalho pélvico", "Reabilitação pós-cirurgia pélvica"],
+      faqs: [
+        { q: "Quais situações podem ser beneficiadas pela fisioterapia pélvica?", a: "Essa abordagem é indicada para tratar dores pélvicas, problemas de incontinência, disfunções durante a relação íntima, e outros desconfortos que afetam a região pélvica. Ela atua restaurando o equilíbrio muscular e aliviando os sintomas que impactam sua qualidade de vida." },
+        { q: "O tratamento é invasivo ou doloroso?", a: "A fisioterapia pélvica é um método seguro e não invasivo. As técnicas são aplicadas de forma cuidadosa e personalizada, priorizando o conforto e a segurança, sem causar dor e sem procedimentos agressivos." },
+        { q: "Em quanto tempo posso perceber melhorias?", a: "Os resultados variam conforme as necessidades individuais, mas muitas pacientes já relatam sentir alívio e uma melhora na confiança logo nas primeiras sessões, o que incentiva a continuidade do tratamento para resultados ainda mais duradouros." }
+      ],
+      image: "assets/images/services/fisioterapia-pelvica.jpg",
+      icon: "assets/images/icons/Fisioterapia-Pelvica.svg",
+      professionals: ["ana-carolina"],
+      pageUrl: "servico.html?slug=fisioterapia-pelvica"
     },
     {
       id: 39508,
       name: "Estética Avançada",
       slug: "estetica-avancada",
-      description: "Procedimentos estéticos de alta tecnologia para tratamentos corporais e faciais personalizados.",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/2-6_11zon.webp",
-      icon: null
+      description: "Procedimentos estéticos de alta tecnologia para tratamentos corporais e faciais com resultados naturais.",
+      longDescription: "A Estética Avançada engloba procedimentos de alta complexidade para rejuvenescimento, modelagem corporal e tratamentos especializados, utilizando tecnologias modernas e técnicas minimamente invasivas.",
+      benefits: ["Tratamento de celulite e gordura localizada", "Rejuvenescimento facial avançado", "Fios de PDO e bioestimuladores", "Resultados naturais e duradouros", "Protocolos personalizados"],
+      faqs: [
+        { q: "Como funciona a avaliação inicial?", a: "Realizamos uma consulta completa para entender seus objetivos estéticos e avaliar as condições da pele e do corpo. A partir daí, elaboramos um protocolo personalizado para atender às suas necessidades com segurança e eficácia." },
+        { q: "Em quanto tempo verei os resultados?", a: "Os resultados variam conforme o procedimento e as características individuais. Muitos tratamentos já mostram melhoras visíveis nas primeiras sessões, com resultados mais completos após o ciclo completo de tratamento." },
+        { q: "Os tratamentos são invasivos?", a: "Trabalhamos principalmente com procedimentos minimamente invasivos e não invasivos, combinando tecnologias avançadas e técnicas seguras que promovem resultados naturais e duradouros." }
+      ],
+      image: "assets/images/services/estetica-avancada.webp",
+      icon: "assets/images/icons/Estetica.svg",
+      professionals: ["raquel-giovanella", "priscila-pail"],
+      pageUrl: "servico.html?slug=estetica-avancada"
     },
     {
       id: 39756,
       name: "Massoterapia",
       slug: "massoterapia",
-      description: "Massagens terapêuticas que aliviam tensões, reduzem estresse e promovem relaxamento profundo.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/05/Adicionar-Massoterapia.jpg",
-      icon: null
+      description: "Massagens terapêuticas que aliviam tensões, reduzem estresse e promovem relaxamento profundo e bem-estar.",
+      longDescription: "A Massoterapia utiliza diferentes técnicas de massagem para aliviar tensões musculares, melhorar a circulação sanguínea, reduzir o estresse e promover o bem-estar físico e mental.",
+      benefits: ["Alívio de tensões musculares", "Redução do estresse e ansiedade", "Melhora da circulação sanguínea", "Relaxamento profundo", "Melhora da qualidade do sono"],
+      faqs: [],
+      image: "assets/images/services/massoterapia.jpg",
+      icon: "assets/images/icons/Massoterapia.svg",
+      professionals: [],
+      pageUrl: "servico.html?slug=massoterapia"
     },
     {
       id: 39510,
       name: "Podologia",
       slug: "podologia",
-      description: "Cuidados podológicos especializados, incluindo tratamento de micoses, unhas encravadas e mais.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/03/Adicionar-podologia.jpg",
-      icon: null
+      description: "Cuidados podológicos especializados, incluindo tratamento de micoses, unhas encravadas e todas as condições dos pés.",
+      longDescription: "A Podologia é a especialidade dedicada ao diagnóstico, prevenção e tratamento das afecções dos pés. Oferecemos tratamento de micoses, unhas encravadas, calosidades e muito mais com tecnologia laser.",
+      benefits: ["Tratamento de micose nas unhas (laser)", "Correção de unhas encravadas", "Tratamento de calosidades", "Avaliação e cuidado integral dos pés", "Prevenção de complicações em diabéticos"],
+      faqs: [
+        { q: "Quais problemas a podologia trata?", a: "Cuidamos de unhas encravadas, calos, micoses, rachaduras nos pés, pés diabéticos e outros desconfortos que podem comprometer sua mobilidade e bem-estar." },
+        { q: "O tratamento é doloroso?", a: "Nossos procedimentos são feitos com técnicas modernas e cuidadosas para minimizar qualquer desconforto, proporcionando um atendimento seguro e tranquilo." },
+        { q: "Preciso de podologia mesmo sem sentir dor?", a: "Sim! A podologia também atua na prevenção. Pequenos incômodos podem evoluir para problemas mais graves se não forem tratados a tempo. Cuidar dos pés regularmente evita complicações futuras." }
+      ],
+      image: "assets/images/services/podologia.jpg",
+      icon: "assets/images/icons/Podologia.svg",
+      professionals: ["lidia-castilhos"],
+      pageUrl: "servico.html?slug=podologia"
     },
     {
       id: 39511,
       name: "Psicologia",
       slug: "psicologia",
-      description: "Suporte psicológico para o bem-estar emocional e mental, com abordagem humanizada e eficaz.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/09/Sem-nome-3600-x-1971-px-2.png",
-      icon: null
+      description: "Suporte psicológico para o bem-estar emocional e mental, com abordagem humanizada, acolhedora e cientificamente embasada.",
+      longDescription: "A Psicologia na Lifessence oferece atendimento individual baseado na Terapia Cognitivo-Comportamental (TCC), com especialização em psicoterapia para infância, adolescência e adultos.",
+      benefits: ["Atendimento para ansiedade e depressão", "Psicoterapia para crianças e adolescentes", "Terapia Cognitivo-Comportamental (TCC)", "Desenvolvimento emocional e autoconhecimento", "Intervenção em transtornos emocionais"],
+      faqs: [
+        { q: "Como a psicoterapia pode me ajudar?", a: "A psicoterapia auxilia na identificação de padrões emocionais e comportamentais que podem estar afetando sua vida. Com o suporte de um profissional, você aprende a lidar melhor com desafios e a construir hábitos mais saudáveis." },
+        { q: "Quanto tempo leva para sentir os benefícios?", a: "Os benefícios variam de acordo com cada pessoa e o tipo de dificuldade trabalhada. Muitas pessoas já relatam perceber mudanças positivas nas primeiras semanas de acompanhamento." },
+        { q: "Preciso estar passando por um grande problema para fazer terapia?", a: "Não! A terapia é para qualquer pessoa que deseja se conhecer melhor, desenvolver inteligência emocional e ter mais qualidade de vida." }
+      ],
+      image: "assets/images/about-clinic.webp",
+      icon: "assets/images/icons/Psicologia.svg",
+      professionals: ["lucas-pezzi"],
+      pageUrl: "servico.html?slug=psicologia"
     },
     {
       id: 39512,
       name: "Acupuntura",
       slug: "acupuntura",
-      description: "Medicina tradicional chinesa para equilíbrio energético, alívio da dor e promoção do bem-estar.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/03/Foto-10.jpg",
-      icon: null
+      description: "Medicina tradicional chinesa para equilíbrio energético, alívio da dor e promoção do bem-estar de forma natural e holística.",
+      longDescription: "A Acupuntura é uma das práticas mais antigas da medicina, com eficácia comprovada para tratamento de dores, ansiedade, insônia e diversas condições. Utiliza agulhas finas em pontos específicos do corpo.",
+      benefits: ["Alívio de dores crônicas e agudas", "Tratamento de ansiedade e insônia", "Equilíbrio energético e bem-estar", "Apoio ao tratamento de infertilidade", "Fortalecimento do sistema imunológico"],
+      faqs: [
+        { q: "A acupuntura ajuda em quais tipos de dor?", a: "A acupuntura é eficaz no tratamento de dores musculares, articulares, enxaquecas, dores nas costas e tensões acumuladas pelo estresse do dia a dia." },
+        { q: "Quantas sessões são necessárias para sentir os efeitos?", a: "Os benefícios podem ser percebidos já na primeira sessão, mas a quantidade ideal varia conforme cada caso. Um plano personalizado será elaborado para atender suas necessidades." },
+        { q: "Quem pode fazer acupuntura?", a: "A técnica é segura para a maioria das pessoas, inclusive para quem busca alívio da ansiedade, insônia e dores crônicas. Caso tenha dúvidas específicas, consulte um especialista." }
+      ],
+      image: "assets/images/services/acupuntura.jpg",
+      icon: "assets/images/icons/Acupuntura.svg",
+      professionals: ["gabrielly-rodrigues"],
+      pageUrl: "servico.html?slug=acupuntura"
     },
     {
       id: 39513,
       name: "Yoga",
       slug: "yoga",
-      description: "Práticas fluídas e meditativas para integrar corpo, mente e espírito com consciência e leveza.",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/SAVE_20211110_195805_11zon.webp",
-      icon: null
-    },
-    {
-      id: 39515,
-      name: "Fisioterapia Funcional",
-      slug: "fisioterapia-funcional",
-      description: "Reabilitação funcional com exercícios específicos para restaurar movimentos e qualidade de vida.",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/8-1_11zon.webp",
-      icon: null
-    },
-    {
-      id: 40707,
-      name: "Pilates para Gestantes",
-      slug: "pilates-para-gestantes",
-      description: "Pilates adaptado para a gestação, promovendo bem-estar, saúde e preparo para o parto.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/11/Pilates-para-gestantes-.jpg",
-      icon: null
-    },
-    {
-      id: 40717,
-      name: "Nutrição",
-      slug: "nutricao",
-      description: "Orientação nutricional personalizada para um estilo de vida saudável e comportamento alimentar consciente.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/11/nome-Falta-o-servico-de-NUTRICAO-profissional.jpg",
-      icon: null
-    },
-    {
-      id: 39509,
-      name: "Massoterapia Especializada",
-      slug: "massoterapia-2",
-      description: "Técnicas avançadas de massagem para recuperação muscular, alívio de dores e bem-estar geral.",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/05/Adicionar-Massoterapia.jpg",
-      icon: null
+      description: "Práticas fluídas e meditativas para integrar corpo, mente e espírito com consciência, leveza e equilíbrio.",
+      longDescription: "O Yoga na Lifessence é praticado com abordagem personalizada, unindo métodos do Hatha, Vinyasa, Tantra e Vibracional. Movimento, consciência corporal e conexão profunda.",
+      benefits: ["Equilíbrio físico, mental e emocional", "Melhora da flexibilidade e força", "Redução do estresse e ansiedade", "Práticas adaptadas a cada nível", "Meditação e respiração consciente"],
+      faqs: [
+        { q: "Nunca fiz Yoga antes. Posso participar?", a: "Sim! Nossas aulas são adaptadas para todos os níveis, desde iniciantes até praticantes experientes. Nosso objetivo é fazer você se sentir confortável e seguro em cada movimento." },
+        { q: "Quais são os principais benefícios do Yoga?", a: "A prática regular de Yoga pode ajudar a reduzir a ansiedade, melhorar a qualidade do sono, fortalecer o corpo, aumentar a flexibilidade e proporcionar uma sensação geral de bem-estar." },
+        { q: "Preciso de equipamentos específicos para a aula?", a: "Não se preocupe! Disponibilizamos tapetes e todos os materiais necessários para a sua prática. Basta vir com roupas confortáveis e o desejo de cuidar de si mesmo." }
+      ],
+      image: "assets/images/services/yoga.webp",
+      icon: "assets/images/icons/Yoga.svg",
+      professionals: ["francielle-domingues"],
+      pageUrl: "servico.html?slug=yoga"
     }
   ],
 
-  /* ── BLOG POSTS ────────────────────────────────────────── */
+  /* ── BLOG ──────────────────────────────────────────────── */
   posts: [
     {
       title: "A acupuntura para aliviar a ansiedade",
@@ -406,7 +368,7 @@ const LIFESSENCE = {
       excerpt: "A acupuntura oferece um caminho natural e holístico para aliviar a ansiedade. Ao equilibrar a energia do corpo, ela ajuda a promover tranquilidade e bem-estar.",
       category: "Acupuntura",
       date: "2024-12-06",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/SAVE_20211110_195805_11zon.webp"
+      image: "assets/images/services/acupuntura.jpg"
     },
     {
       title: "Você sofre dores de cabeça frequentes?",
@@ -414,23 +376,23 @@ const LIFESSENCE = {
       excerpt: "A cefaleia de origem cervical, também conhecida como cefaleia cervicogênica, é um tipo de dor de cabeça que merece atenção especializada.",
       category: "Fisioterapia",
       date: "2024-12-06",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/9-2_11zon.webp"
+      image: "assets/images/services/fisioterapia-esportiva.webp"
     },
     {
       title: "Foco na autocura do organismo",
       slug: "foco-na-autocura-do-organismo",
-      excerpt: "A relação entre paciente e médico, de maneira mais humana e menos intervencionista, é o que define a conduta da nossa clínica.",
+      excerpt: "A relação entre paciente e terapeuta, de maneira mais humana e menos intervencionista, é o que define a conduta da nossa clínica.",
       category: "Osteopatia",
       date: "2024-12-06",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/3-6_11zon.webp"
+      image: "assets/images/services/osteopatia.webp"
     },
     {
       title: "Bioestimulação de Colágeno",
       slug: "bioestimulacao-de-colageno",
-      excerpt: "O Ultraformer® é um novo equipamento de ultrassom micro e macrofocado que promove o estímulo de colágeno e queima da gordura localizada.",
+      excerpt: "Procedimentos modernos que estimulam o colágeno da pele promovendo rejuvenescimento natural, firmeza e luminosidade de forma segura.",
       category: "Estética",
       date: "2024-12-09",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/09/Sem-nome-3600-x-1971-px-2.png"
+      image: "assets/images/services/estetica-avancada.webp"
     },
     {
       title: "Yoga não é só meditação",
@@ -438,83 +400,94 @@ const LIFESSENCE = {
       excerpt: "Yoga é uma atividade física integral que combina movimento, consciência corporal e respiração. Muito mais do que meditação!",
       category: "Yoga",
       date: "2024-12-09",
-      image: "https://lifessence.com.br/wp-content/uploads/2024/09/SAVE_20211110_195805_11zon.webp"
+      image: "assets/images/services/yoga.webp"
     },
     {
       title: "Fortaleça seu Corpo com Pilates",
       slug: "fortaleca-seu-corpo",
-      excerpt: "Após a gestação, o corpo da mulher passa por muitas mudanças, e a fisioterapia pélvica pode ajudar na recuperação.",
+      excerpt: "Após a gestação, o corpo da mulher passa por muitas mudanças. O Pilates é um aliado essencial na recuperação e no fortalecimento.",
       category: "Pilates",
       date: "2024-12-09",
-      image: "https://lifessence.com.br/wp-content/uploads/2025/03/Foto-12.jpg"
+      image: "assets/images/services/pilates.jpg"
     }
   ],
 
-  /* ── CONTACT INFO ──────────────────────────────────────── */
+  /* ── CONTATO ─────────────────────────────────────────── */
   contact: {
-    whatsapp: "5454991234567",   // Substituir pelo número real
-    phone: "(54) 9 9XXX-XXXX",  // Substituir pelo número real
+    whatsapp: "5554981541639",
+    phone: "(54) 98154-1639",
     email: "lifessence@lifessence.com.br",
-    address: "Caxias do Sul – RS",
-    hours: "Segunda a Sábado: 08:00 – 19:00",
-    instagram: "https://www.instagram.com/lifessence/",
-    facebook: "https://www.facebook.com/lifessence/",
-    maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.!2d-51.17!3d-29.16!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLifessence!5e0!3m2!1spt-BR!2sbr!4v1"
+    address: "Avenida Rio Branco, 1718, Caxias do Sul, RS 95096-000",
+    hours: "Segunda a Sexta: 08:00 – 20:00 | Sáb: 08:00 – 19:30",
+    instagram: "https://www.instagram.com/lifessencesaudeebemestar/",
+    facebook: "https://www.facebook.com/lifessencesaudeebemestar/"
   }
 
 };
 
-/* ── Render Helpers ──────────────────────────────────────── */
+/* ── Render Helpers ─────────────────────────────────────── */
 
-/**
- * Renderiza o card de um doutor
- */
 function renderDoctorCard(doc) {
-  const social = [
-    doc.instagram ? `<a href="${doc.instagram}" target="_blank" rel="noopener" aria-label="Instagram de ${doc.name}">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    </a>` : '',
-    doc.facebook ? `<a href="${doc.facebook}" target="_blank" rel="noopener" aria-label="Facebook de ${doc.name}">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    </a>` : '',
-    doc.linkedin ? `<a href="${doc.linkedin}" target="_blank" rel="noopener" aria-label="LinkedIn de ${doc.name}">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-    </a>` : ''
-  ].filter(Boolean).join('');
-
+  const link = doc.pageUrl
+    ? `<a href="${doc.pageUrl}" class="btn-profile">Ver perfil →</a>`
+    : '';
+  const photoHtml = doc.photo
+    ? `<a href="${doc.pageUrl || '#'}"><img class="doctor-img" src="${doc.photo}" alt="Foto de ${doc.name}" loading="lazy"></a>`
+    : `<div class="doctor-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>`;
   return `
     <div class="doctor-card fade-in">
-      ${doc.photo
-        ? `<img class="doctor-img" src="${doc.photo}" alt="Foto de ${doc.name}" loading="lazy">`
-        : `<div class="doctor-img-placeholder"><span>👤</span></div>`}
+      ${photoHtml}
       <div class="doctor-info">
         <h5>${doc.name}</h5>
         <span class="doctor-specialty">${doc.specialty}</span>
         ${doc.certifications ? `<p class="doctor-bio">${doc.certifications}</p>` : ''}
-        ${social ? `<div class="doctor-socials">${social}</div>` : ''}
+        ${link}
       </div>
     </div>`;
 }
 
-/**
- * Renderiza o card de um serviço
- */
 function renderServiceCard(svc) {
+  const icon = svc.icon
+    ? `<img class="service-icon-img" src="${svc.icon}" alt="" loading="lazy">`
+    : '';
+  const link = svc.pageUrl
+    ? `<a href="${svc.pageUrl}" class="btn-service-more">Saiba mais →</a>`
+    : '';
   return `
     <div class="service-card service-card-img fade-in">
       <div class="service-img-wrap">
-        <img src="${svc.image}" alt="${svc.name}" loading="lazy">
+        <img src="${svc.image}" alt="${svc.name}" loading="lazy"
+             onerror="this.style.background='linear-gradient(135deg,#f0e8ed,#e8d5e8)';this.style.height='180px';">
       </div>
       <div class="service-card-body">
-        <h5>${svc.name}</h5>
+        <div class="service-card-title-row">
+          ${icon}
+          <h5>${svc.name}</h5>
+        </div>
         <p>${svc.description}</p>
+        ${link}
       </div>
     </div>`;
 }
 
-/**
- * Popula elemento com conteúdo gerado
- */
+function renderBlogCard(post) {
+  const date = new Date(post.date).toLocaleDateString('pt-BR', {
+    day: '2-digit', month: 'long', year: 'numeric'
+  });
+  return `
+    <article class="blog-card fade-in">
+      <div class="blog-card-img">
+        <img src="${post.image}" alt="${post.title}" loading="lazy">
+      </div>
+      <div class="blog-card-body">
+        <span class="blog-tag">${post.category}</span>
+        <h5>${post.title}</h5>
+        <p>${post.excerpt}</p>
+        <span class="blog-meta">${date}</span>
+      </div>
+    </article>`;
+}
+
 function populate(selector, items, renderFn) {
   const el = document.querySelector(selector);
   if (!el) return;
