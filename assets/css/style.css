@@ -10,8 +10,8 @@
 :root {
   --color-primary:    #A61680;
   --color-primary-d:  #8B1269;
-  --color-secondary:  #008DB1;
-  --color-secondary-d:#006F8C;
+  --color-secondary:  #8B1269;
+  --color-secondary-d:#6A0E4F;
   --color-bg:         #FFFFFF;
   --color-bg2:        #F7F5F4;
   --color-text:       #1A1A1A;
@@ -536,6 +536,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
 .service-card-img .service-img-wrap img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: var(--transition);
 }
 .service-card-img:hover .service-img-wrap img { transform: scale(1.06); }
@@ -913,8 +914,8 @@ textarea.form-control { height: 130px; resize: vertical; }
 
 /* ─── Footer ─── */
 .footer {
-  background: #1C1433;
-  color: rgba(255,255,255,.75);
+  background: #ECEAE8;
+  color: var(--color-text-muted);
   padding: 70px 0 0;
 }
 .footer-grid {
@@ -927,7 +928,7 @@ textarea.form-control { height: 130px; resize: vertical; }
 .footer-logo {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-text);
   margin-bottom: 16px;
   display: block;
 }
@@ -939,9 +940,9 @@ textarea.form-control { height: 130px; resize: vertical; }
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255,255,255,.15);
+  border: 1px solid rgba(0,0,0,.15);
   border-radius: 50%;
-  color: rgba(255,255,255,.7);
+  color: var(--color-text-muted);
   transition: var(--transition);
 }
 .footer-socials a:hover {
@@ -950,7 +951,7 @@ textarea.form-control { height: 130px; resize: vertical; }
   color: #fff;
 }
 .footer-col h6 {
-  color: #fff;
+  color: var(--color-text);
   font-size: .85rem;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -958,18 +959,19 @@ textarea.form-control { height: 130px; resize: vertical; }
 }
 /* Serviços em 2 colunas compactas */
 .footer-services-grid {
-  columns: 2;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 12px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer-services-grid li { break-inside: avoid; margin-bottom: 10px; }
+.footer-services-grid li { margin-bottom: 0; }
 .footer-col ul { display: flex; flex-direction: column; gap: 12px; list-style: none; padding: 0; }
 .footer-col ul li a,
 .footer-services-grid li a {
   font-size: .82rem;
-  color: rgba(255,255,255,.6);
+  color: var(--color-text-muted);
   transition: var(--transition);
   display: block;
 }
@@ -986,22 +988,22 @@ textarea.form-control { height: 130px; resize: vertical; }
   align-items: center;
 }
 .footer-contact-item .fci-icon svg { width: 16px; height: 16px; }
-.footer-contact-item .fci-text { font-size: .82rem; color: rgba(255,255,255,.65); line-height: 1.6; }
-.footer-contact-item .fci-text a { color: rgba(255,255,255,.65); transition: var(--transition); }
+.footer-contact-item .fci-text { font-size: .82rem; color: var(--color-text-muted); line-height: 1.6; }
+.footer-contact-item .fci-text a { color: var(--color-text-muted); transition: var(--transition); }
 .footer-contact-item .fci-text a:hover { color: var(--color-primary); }
 /* Legacy emoji icon support (remove when all pages use SVG) */
 .footer-contact-item .icon { color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
-.footer-contact-item span { font-size: .875rem; color: rgba(255,255,255,.65); }
+.footer-contact-item span { font-size: .875rem; color: var(--color-text-muted); }
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(0,0,0,.08);
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-.footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.35); }
-.footer-bottom a { color: rgba(255,255,255,.45); }
+.footer-bottom p { font-size: .8rem; color: rgba(0,0,0,.5); }
+.footer-bottom a { color: rgba(0,0,0,.6); }
 .footer-bottom a:hover { color: var(--color-primary); }
 
 /* ─── Seção Espaço Acolhedor (Contato) ─── */
@@ -1154,7 +1156,7 @@ textarea.form-control { height: 130px; resize: vertical; }
 }
 .doctor-card:hover .doctor-img { transform: scale(1.03); }
 .doctor-info { padding: 20px 20px 22px; }
-.doctor-info h5 { font-size: 1rem; color: var(--color-secondary); margin-bottom: 4px; }
+.doctor-info h5 { font-size: 1rem; color: var(--color-text); margin-bottom: 4px; }
 .doctor-specialty {
   font-size: 0.78rem;
   color: var(--color-primary);
@@ -1239,6 +1241,7 @@ textarea.form-control { height: 130px; resize: vertical; }
 .service-img-wrap img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: transform .4s ease;
 }
@@ -1260,24 +1263,7 @@ textarea.form-control { height: 130px; resize: vertical; }
 .service-card-body p { font-size: 0.82rem; color: var(--color-text); line-height: 1.6; }
 
 /* ── Btn outline ── */
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 13px 28px;
-  border-radius: 100px;
-  font-size: 0.92rem;
-  font-weight: 600;
-  border: 1.5px solid var(--color-border);
-  color: var(--color-secondary);
-  background: transparent;
-  text-decoration: none;
-  transition: var(--transition);
-}
-.btn-outline:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-}
+
 
 /* ═══ Timeline — Nossa História (sobre.html) ═══ */
 .historia-timeline {
@@ -1597,10 +1583,13 @@ textarea.form-control { height: 130px; resize: vertical; }
   margin-bottom: 32px;
 }
 .saude-integral-pillar {
-  background: #fff;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--color-bg2);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 20px;
+  border-radius: var(--radius-lg);
+  padding: 24px;
   transition: var(--transition);
 }
 .saude-integral-pillar:hover {
@@ -1615,7 +1604,6 @@ textarea.form-control { height: 130px; resize: vertical; }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   color: #fff;
   flex-shrink: 0;
 }
@@ -1646,4 +1634,87 @@ textarea.form-control { height: 130px; resize: vertical; }
   .saude-integral-pillars { grid-template-columns: 1fr; }
   .saude-integral-img-wrap img { height: 300px; }
 }
+
+
+/* === Refinamentos Finais === */
+
+/* Lista de Benefcios (O que voc ganha) */
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.benefit-list-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  gap: 18px;
+  transition: var(--transition);
+}
+.benefit-list-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+  transform: translateX(4px);
+}
+.benefit-list-icon {
+  width: 32px; height: 32px;
+  flex-shrink: 0;
+  background: rgba(166,22,128,.08);
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefit-list-icon svg { width: 16px; height: 16px; }
+.benefit-list-text {
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* Servios Pill (Especialistas) */
+.service-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--color-bg2);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: var(--transition);
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.service-pill:hover {
+  background: #fff;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+.service-icon-pill {
+  width: 18px; height: 18px;
+  object-fit: contain;
+  filter: invert(20%) sepia(70%) saturate(500%) hue-rotate(280deg);
+}
+
+/* CTA Unified Background */
+.cta-unified {
+  background: #232021;
+  padding: 80px 0;
+}
+.cta-unified h2 { color: #fff !important; }
+.cta-unified p { color: rgba(255,255,255,.85) !important; }
+
 

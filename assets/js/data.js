@@ -204,7 +204,7 @@ const LIFESSENCE = {
         { q: "Em quanto tempo começo a sentir os resultados?", a: "Os primeiros benefícios podem ser percebidos em poucas semanas. No entanto, o tempo varia de pessoa para pessoa, dependendo da frequência das aulas e das condições individuais." },
         { q: "O Pilates é seguro para todas as idades?", a: "Sim! Com a orientação correta, o Pilates pode ser praticado por pessoas de todas as idades, desde jovens até idosos, adaptando-se às necessidades individuais de cada aluno." }
       ],
-      image: "assets/images/services/pilates.jpg",
+      image: "assets/images/services/pilates.webp",
       icon: "assets/images/icons/Pilates.svg",
       professionals: ["emanuele-rizzon", "amanda-arruda", "ana-carolina"],
       pageUrl: "servico.html?slug=pilates"
@@ -255,7 +255,7 @@ const LIFESSENCE = {
         { q: "O tratamento é invasivo ou doloroso?", a: "A fisioterapia pélvica é um método seguro e não invasivo. As técnicas são aplicadas de forma cuidadosa e personalizada, priorizando o conforto e a segurança, sem causar dor e sem procedimentos agressivos." },
         { q: "Em quanto tempo posso perceber melhorias?", a: "Os resultados variam conforme as necessidades individuais, mas muitas pacientes já relatam sentir alívio e uma melhora na confiança logo nas primeiras sessões, o que incentiva a continuidade do tratamento para resultados ainda mais duradouros." }
       ],
-      image: "assets/images/services/fisioterapia-pelvica.jpg",
+      image: "assets/images/services/fisioterapia-pelvica.webp",
       icon: "assets/images/icons/Fisioterapia-Pelvica.svg",
       professionals: ["ana-carolina"],
       pageUrl: "servico.html?slug=fisioterapia-pelvica"
@@ -285,7 +285,7 @@ const LIFESSENCE = {
       longDescription: "A Massoterapia utiliza diferentes técnicas de massagem para aliviar tensões musculares, melhorar a circulação sanguínea, reduzir o estresse e promover o bem-estar físico e mental.",
       benefits: ["Alívio de tensões musculares", "Redução do estresse e ansiedade", "Melhora da circulação sanguínea", "Relaxamento profundo", "Melhora da qualidade do sono"],
       faqs: [],
-      image: "assets/images/services/massoterapia.jpg",
+      image: "assets/images/services/massoterapia.webp",
       icon: "assets/images/icons/Massoterapia.svg",
       professionals: [],
       pageUrl: "servico.html?slug=massoterapia"
@@ -302,7 +302,7 @@ const LIFESSENCE = {
         { q: "O tratamento é doloroso?", a: "Nossos procedimentos são feitos com técnicas modernas e cuidadosas para minimizar qualquer desconforto, proporcionando um atendimento seguro e tranquilo." },
         { q: "Preciso de podologia mesmo sem sentir dor?", a: "Sim! A podologia também atua na prevenção. Pequenos incômodos podem evoluir para problemas mais graves se não forem tratados a tempo. Cuidar dos pés regularmente evita complicações futuras." }
       ],
-      image: "assets/images/services/podologia.jpg",
+      image: "assets/images/services/podologia.webp",
       icon: "assets/images/icons/Podologia.svg",
       professionals: ["lidia-castilhos"],
       pageUrl: "servico.html?slug=podologia"
@@ -319,7 +319,7 @@ const LIFESSENCE = {
         { q: "Quanto tempo leva para sentir os benefícios?", a: "Os benefícios variam de acordo com cada pessoa e o tipo de dificuldade trabalhada. Muitas pessoas já relatam perceber mudanças positivas nas primeiras semanas de acompanhamento." },
         { q: "Preciso estar passando por um grande problema para fazer terapia?", a: "Não! A terapia é para qualquer pessoa que deseja se conhecer melhor, desenvolver inteligência emocional e ter mais qualidade de vida." }
       ],
-      image: "assets/images/about-clinic.webp",
+      image: "assets/images/services/psicologia.webp",
       icon: "assets/images/icons/Psicologia.svg",
       professionals: ["lucas-pezzi"],
       pageUrl: "servico.html?slug=psicologia"
@@ -336,7 +336,7 @@ const LIFESSENCE = {
         { q: "Quantas sessões são necessárias para sentir os efeitos?", a: "Os benefícios podem ser percebidos já na primeira sessão, mas a quantidade ideal varia conforme cada caso. Um plano personalizado será elaborado para atender suas necessidades." },
         { q: "Quem pode fazer acupuntura?", a: "A técnica é segura para a maioria das pessoas, inclusive para quem busca alívio da ansiedade, insônia e dores crônicas. Caso tenha dúvidas específicas, consulte um especialista." }
       ],
-      image: "assets/images/services/acupuntura.jpg",
+      image: "assets/images/services/acupuntura.webp",
       icon: "assets/images/icons/Acupuntura.svg",
       professionals: ["gabrielly-rodrigues"],
       pageUrl: "servico.html?slug=acupuntura"
@@ -368,7 +368,7 @@ const LIFESSENCE = {
       excerpt: "A acupuntura oferece um caminho natural e holístico para aliviar a ansiedade. Ao equilibrar a energia do corpo, ela ajuda a promover tranquilidade e bem-estar.",
       category: "Acupuntura",
       date: "2024-12-06",
-      image: "assets/images/services/acupuntura.jpg"
+      image: "assets/images/services/acupuntura.webp"
     },
     {
       title: "Você sofre dores de cabeça frequentes?",
@@ -408,7 +408,7 @@ const LIFESSENCE = {
       excerpt: "Após a gestação, o corpo da mulher passa por muitas mudanças. O Pilates é um aliado essencial na recuperação e no fortalecimento.",
       category: "Pilates",
       date: "2024-12-09",
-      image: "assets/images/services/pilates.jpg"
+      image: "assets/images/services/pilates.webp"
     }
   ],
 
