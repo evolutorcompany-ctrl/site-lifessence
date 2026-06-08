@@ -22,5 +22,7 @@ jobs:
           script: |
             echo "🚀 Iniciando deploy em $(date)"
             cd ${{ secrets.DEPLOY_PATH }}
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
             echo "✅ Deploy concluído em $(date)"
