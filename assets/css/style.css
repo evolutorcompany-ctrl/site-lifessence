@@ -969,7 +969,7 @@ textarea.form-control { height: 130px; resize: vertical; }
   font-family: 'Publica Play', var(--font-body);
   font-size: 1.6rem;
   font-weight: 500;
-  -webkit-text-stroke: 0.6px currentColor;
+  -webkit-text-stroke: 0.7px currentColor;
   color: var(--color-text);
   margin-bottom: 16px;
   display: block;
