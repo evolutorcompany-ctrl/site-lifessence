@@ -206,7 +206,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
   font-family: 'Publica Play', var(--font-body);
   font-size: 1.4rem;
   font-weight: 500;
-  -webkit-text-stroke: 0.5px currentColor;
+  -webkit-text-stroke: 0.6px currentColor;
   color: var(--color-primary);
   letter-spacing: -.5px;
 }
@@ -214,7 +214,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
   font-family: 'Publica Play', var(--font-body);
   font-size: .65rem;
   font-weight: 500;
-  -webkit-text-stroke: 0.4px currentColor;
+  -webkit-text-stroke: 0.5px currentColor;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -969,7 +969,7 @@ textarea.form-control { height: 130px; resize: vertical; }
   font-family: 'Publica Play', var(--font-body);
   font-size: 1.6rem;
   font-weight: 500;
-  -webkit-text-stroke: 0.5px currentColor;
+  -webkit-text-stroke: 0.6px currentColor;
   color: var(--color-text);
   margin-bottom: 16px;
   display: block;
