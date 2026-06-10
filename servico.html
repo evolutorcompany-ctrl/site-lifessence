@@ -10,58 +10,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=3">
   <style>
-    /* ── Service Hero ──────────────────── */
+    /* ── Service Header ──────────────────── */
     .svc-hero {
       background: var(--color-bg2);
-      padding: 100px 0 70px;
+      padding: 140px 0 80px;
       position: relative;
-      overflow: hidden;
-    }
-    .svc-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url('') center/cover no-repeat;
-      opacity: 0.08;
     }
     .svc-hero-inner {
       display: grid;
-      grid-template-columns: 1fr 420px;
+      grid-template-columns: 1.2fr 1fr;
       gap: 60px;
       align-items: center;
-      position: relative;
-      z-index: 1;
     }
-    .svc-hero-icon {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
+    .svc-hero-text h1 {
+      color: var(--color-text);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      line-height: 1.15;
       margin-bottom: 20px;
     }
-    .svc-hero-text p.label { color: rgba(255,255,255,.7); }
-    .svc-hero-text h1 {
-      color: #fff;
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      line-height: 1.1;
-      margin-bottom: 16px;
-    }
     .svc-hero-text p.lead {
-      color: rgba(255,255,255,.85);
+      color: var(--color-text-muted);
       font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 28px;
+      line-height: 1.8;
+      margin-bottom: 32px;
     }
     .svc-hero-img {
       border-radius: var(--radius-lg);
       overflow: hidden;
-      box-shadow: 0 30px 80px rgba(0,0,0,.35);
+      box-shadow: var(--shadow-md);
     }
     .svc-hero-img img {
       width: 100%;
-      height: 340px;
+      height: auto;
+      aspect-ratio: 4/3;
       object-fit: cover;
       display: block;
+    }
+    @media (max-width: 900px) {
+      .svc-hero-inner { grid-template-columns: 1fr; }
+      .svc-hero { padding: 120px 0 60px; }
     }
     /* ── Benefícios ────────────────────── */
     .benefits-section { padding: 80px 0; background: var(--color-bg); }
@@ -113,17 +100,17 @@
       font-weight: 600;
     }
     /* ── FAQ ────────────────────────────── */
-    .faq-section { padding: 80px 0; background: var(--color-bg2); }
+    .faq-section { padding: 80px 0; background: var(--color-bg); }
     .faq-list { margin-top: 48px; max-width: 780px; margin-left: auto; margin-right: auto; }
     .faq-item {
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius);
-      margin-bottom: 12px;
+      border: 1px solid rgba(166, 22, 128, 0.1);
+      border-radius: var(--radius-lg);
+      margin-bottom: 14px;
       overflow: hidden;
-      background: var(--color-bg);
-      transition: border-color 0.25s;
+      background: #FDFBFD;
+      transition: all 0.3s ease;
     }
-    .faq-item.open { border-color: var(--color-primary); }
+    .faq-item.open { border-color: var(--color-primary); background: #fff; box-shadow: var(--shadow-sm); }
     .faq-question {
       width: 100%;
       text-align: left;
@@ -225,8 +212,7 @@
       text-decoration: none;
     }
     .svc-pro-body .btn-profile:hover { text-decoration: underline; }
-    /* ── CTA ───────────────────────────── */
-    .svc-cta { background: var(--color-primary); padding: 80px 0; }
+
     /* ── Responsive ───────────────────── */
     @media (max-width: 900px) {
       .svc-hero-inner { grid-template-columns: 1fr; }
@@ -243,6 +229,7 @@
 <nav class="nav" id="main-nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
+      <img src="assets/images/favicon/apple-icon-180x180.png" alt="Logo Lifessence" class="nav-logo-icon">
       <div class="nav-logo-text">
         <span>Lifessence</span>
         <span>Saúde &amp; Bem-Estar</span>
@@ -486,31 +473,17 @@ document.addEventListener('DOMContentLoaded', () => {
     </section>` : '';
 
   main.innerHTML = `
-    <!-- Breadcrumb -->
-    <section class="cta-unified">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html" style="color:rgba(255,255,255,.6);">Início</a>
-          <span class="sep" style="color:rgba(255,255,255,.4);">›</span>
-          <a href="servicos.html" style="color:rgba(255,255,255,.6);">Serviços</a>
-          <span class="sep" style="color:rgba(255,255,255,.4);">›</span>
-          <span style="color:#fff;">${svc.name}</span>
-        </nav>
-      </div>
-    </section>
-
-    <!-- Hero Overlay -->
-    <section class="svc-hero" style="background: url('${svc.image}') center/cover no-repeat; position: relative; padding: 120px 0;">
-      <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.7); z-index: 1;"></div>
-      <div class="container svc-hero-inner" style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto; text-align: center; color: #fff;">
+    <!-- Main Service Header -->
+    <section class="svc-hero" style="background: linear-gradient(rgba(247, 245, 244, 0.60), rgba(247, 245, 244, 0.60)), url('${svc.image}') center/cover no-repeat;">
+      <div class="container svc-hero-inner" style="grid-template-columns: 1fr; max-width: 800px; text-align: center;">
         <div class="svc-hero-text">
-          <p class="label" style="color: var(--color-primary); background: rgba(255,255,255,0.95); display: inline-block; padding: 4px 16px; border-radius: 50px; margin-bottom: 24px; font-weight: 600;">Nossos Serviços</p>
-          <h1 style="color: #fff; margin-bottom: 16px;">${svc.name}</h1>
-          <p class="lead" style="color: rgba(255,255,255,0.9); margin-bottom: 32px; font-size: 1.1rem; line-height: 1.6;">${svc.longDescription || svc.description}</p>
-          <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content: center;">
+          <p class="label fade-in" style="color: var(--color-primary); margin-bottom: 16px;">Nossos Serviços</p>
+          <h1 class="fade-in delay-1">${svc.name}</h1>
+          <p class="lead fade-in delay-2" style="margin-left: auto; margin-right: auto;">${svc.longDescription || svc.description}</p>
+          <div class="fade-in delay-3" style="display:flex; gap:14px; flex-wrap:wrap; justify-content: center;">
             <a href="https://wa.me/${LIFESSENCE.contact.whatsapp}?text=${waMsg}"
                target="_blank" rel="noopener" class="btn btn-primary">${waSvg}Agendar Consulta</a>
-            <a href="servicos.html" class="btn" style="color:#fff;border:1.5px solid rgba(255,255,255,.4);background:transparent;">&larr; Ver serviços</a>
+            <a href="servicos.html" class="btn btn-light-pink">&larr; Ver todos os serviços</a>
           </div>
         </div>
       </div>
@@ -534,11 +507,11 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Dúvidas Frequentes -->
     ${faqHtml}
 
-    <!-- CTA -->
-    <section class="svc-cta">
+    <!-- ── CTA Banner ── -->
+    <section class="cta-unified" aria-label="Agende sua consulta">
       <div class="container text-center">
-        <h2 class="fade-in" style="color:#fff;margin-bottom:16px;">Pronto para começar?</h2>
-        <p class="fade-in delay-1" style="color:var(--color-text-muted);margin-bottom:32px;">
+        <h2 class="fade-in" style="margin-bottom:16px;">Pronto para começar?</h2>
+        <p class="fade-in delay-1" style="margin-bottom:36px; font-size:1.05rem;">
           Agende sua sessão de ${svc.name} e dê o primeiro passo para o seu equilíbrio.
         </p>
         <a href="https://wa.me/${LIFESSENCE.contact.whatsapp}?text=${waMsg}"
@@ -558,6 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 </body>
 </html>
+
 
 
 

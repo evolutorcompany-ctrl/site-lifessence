@@ -6,6 +6,22 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
+@font-face {
+  font-family: 'Publica Play';
+  src: url('../fonts/publicaplay-thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MBF Canno';
+  src: url('../fonts/mbf-canno.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ─── CSS Variables ─── */
 :root {
   --color-primary:    #A61680;
@@ -126,6 +142,19 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
   border-color: var(--color-primary);
   transform: translateY(-2px);
 }
+
+.btn-light-pink {
+  background: #F1DCE8;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.btn-light-pink:hover {
+  background: #E8C1D6;
+  color: var(--color-primary-d);
+  border-color: var(--color-primary-d);
+  transform: translateY(-2px);
+}
+
 .btn-white {
   background: #fff;
   color: var(--color-primary);
@@ -164,22 +193,28 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-primary);
+  gap: 12px;
+  text-decoration: none;
 }
-.nav-logo img { height: 44px; width: auto; }
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
 .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
 .nav-logo-text span:first-child {
+  font-family: 'Publica Play', var(--font-body);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 500;
+  -webkit-text-stroke: 0.2px currentColor;
   color: var(--color-primary);
   letter-spacing: -.5px;
 }
 .nav-logo-text span:last-child {
+  font-family: 'Publica Play', var(--font-body);
   font-size: .65rem;
-  font-weight: 400;
+  font-weight: 500;
+  -webkit-text-stroke: 0.2px currentColor;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -354,7 +389,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
   margin-bottom: 60px;
 }
 .section-intro .label { margin-bottom: 12px; }
-.section-intro h2 { color: var(--color-secondary); margin-bottom: 16px; }
+.section-intro h2 { color: var(--color-text); margin-bottom: 16px; }
 .section-intro p { max-width: 680px; margin: 0 auto; font-size: 1.05rem; }
 
 /* ─── About Section ─── */
@@ -543,7 +578,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
 .service-card-img .service-card-body { padding: 20px; }
 .service-card-img:hover::before { opacity: 0; }
 .service-card-img:hover { transform: translateY(-6px); }
-.service-card-img:hover .service-card-body h5 { color: var(--color-primary); }
+.service-card-img:hover .service-card-body h5 { color: #fff; }
 .service-card-img:hover .service-card-body p { color: var(--color-text-muted); }
 
 /* ─── Doctors Grid ─── */
@@ -762,10 +797,15 @@ textarea.form-control { height: 130px; resize: vertical; }
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://lifessence.com.br/wp-content/uploads/2024/09/IMG_0984_11zon-scaled.webp') center/cover no-repeat;
-  opacity: .12;
+  background: var(--hero-bg, url('../images/hero-bg.webp')) center/cover no-repeat;
+  opacity: .15;
 }
 .page-hero-inner { position: relative; z-index: 1; }
+.page-hero-sobre { --hero-bg: url('../images/hero-sobre-v2.webp'); }
+.page-hero-especialistas { --hero-bg: url('../images/hero-especialistas-v2.webp'); }
+.page-hero-servicos { --hero-bg: url('../images/hero-servicos-v2.webp'); }
+.page-hero-contato { --hero-bg: url('../images/hero-contato-v2.webp'); }
+
 .page-hero .label { color: rgba(255,255,255,.7); margin-bottom: 16px; }
 .page-hero h1 { color: #fff; margin-bottom: 16px; }
 .page-hero p { color: rgba(255,255,255,.8); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
@@ -926,8 +966,10 @@ textarea.form-control { height: 130px; resize: vertical; }
 }
 .footer-brand {}
 .footer-logo {
+  font-family: 'Publica Play', var(--font-body);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
+  -webkit-text-stroke: 0.2px currentColor;
   color: var(--color-text);
   margin-bottom: 16px;
   display: block;
@@ -1002,9 +1044,23 @@ textarea.form-control { height: 130px; resize: vertical; }
   align-items: center;
   gap: 20px;
 }
-.footer-bottom p { font-size: .8rem; color: rgba(0,0,0,.5); }
+.footer-bottom p { font-size: .8rem; color: rgba(0,0,0,.5); display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; }
 .footer-bottom a { color: rgba(0,0,0,.6); }
 .footer-bottom a:hover { color: var(--color-primary); }
+.dev-credits { font-size: .8rem; color: rgba(0,0,0,.5); }
+.dev-credits span { opacity: 0.7; }
+.dev-evolutor {
+  font-family: 'MBF Canno', sans-serif;
+  font-size: 1.1em;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.dev-evolutor:hover {
+  opacity: 0.8;
+  color: var(--color-primary);
+  text-decoration: none;
+}
 
 /* ─── Seção Espaço Acolhedor (Contato) ─── */
 .espaco-acolhedor-banner {
@@ -1255,9 +1311,18 @@ textarea.form-control { height: 130px; resize: vertical; }
 }
 .service-icon-img {
   width: 28px; height: 28px;
-  object-fit: contain;
   flex-shrink: 0;
-  filter: invert(20%) sepia(70%) saturate(500%) hue-rotate(280deg);
+  background-color: var(--color-secondary);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transition: var(--transition);
+}
+.service-card:hover .service-icon-img {
+  background-color: #fff;
 }
 .service-card-body h5 { font-size: 0.95rem; color: var(--color-secondary); }
 .service-card-body p { font-size: 0.82rem; color: var(--color-text); line-height: 1.6; }
@@ -1574,7 +1639,7 @@ textarea.form-control { height: 130px; resize: vertical; }
   margin-top: 4px;
 }
 .saude-integral-text .label { margin-bottom: 14px; }
-.saude-integral-text h2 { color: var(--color-secondary); margin-bottom: 20px; }
+.saude-integral-text h2 { color: var(--color-text); margin-bottom: 20px; }
 .saude-integral-text > p { margin-bottom: 24px; font-size: 1rem; line-height: 1.8; }
 .saude-integral-pillars {
   display: grid;
@@ -1584,38 +1649,28 @@ textarea.form-control { height: 130px; resize: vertical; }
 }
 .saude-integral-pillar {
   display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  background: var(--color-bg2);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: 30px 24px;
+  min-height: 140px;
   transition: var(--transition);
 }
 .saude-integral-pillar:hover {
   border-color: var(--color-primary);
   box-shadow: var(--shadow-sm);
-}
-.saude-integral-pillar-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  flex-shrink: 0;
-}
-.saude-integral-pillar h5 {
-  font-size: .9rem;
-  color: var(--color-text);
-  margin-bottom: 4px;
+  transform: translateY(-2px);
 }
 .saude-integral-pillar p {
-  font-size: .8rem;
+  font-size: .9rem;
   line-height: 1.6;
   margin: 0;
+  color: var(--color-text);
+  font-weight: 500;
 }
 
 /* ── Responsividade das novas seções ── */
@@ -1711,10 +1766,20 @@ textarea.form-control { height: 130px; resize: vertical; }
 
 /* CTA Unified Background */
 .cta-unified {
-  background: #232021;
+  background: #029EB2;
   padding: 80px 0;
 }
-.cta-unified h2 { color: #fff !important; }
-.cta-unified p { color: rgba(255,255,255,.85) !important; }
+.cta-unified h2 { color: #ffffff !important; }
+.cta-unified p { color: rgba(255, 255, 255, 0.9) !important; }
+.cta-unified .btn-primary {
+  background: #ffffff;
+  color: #029EB2;
+  border-color: #ffffff;
+}
+.cta-unified .btn-primary:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
 
 

@@ -47,7 +47,7 @@
       border-radius: 50px;
     }
 
-    /* ── Ícones SVG nos contact-items ── */
+    /* ── Ãcones SVG nos contact-items ── */
     .contact-item-icon svg {
       width: 22px;
       height: 22px;
@@ -124,6 +124,7 @@
 <nav class="nav" id="main-nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
+      <img src="assets/images/favicon/apple-icon-180x180.png" alt="Logo Lifessence" class="nav-logo-icon">
       <div class="nav-logo-text">
         <span>Lifessence</span>
         <span>Saúde &amp; Bem-Estar</span>
@@ -158,7 +159,7 @@
 
 <main class="page-content">
 
-  <!-- Page Hero com imagem de acolhimento -->
+  <!-- Page Hero -->
   <section class="page-hero page-hero-contato">
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -465,7 +466,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Lifessence. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Lifessence Saúde &amp; Bem-Estar. Todos os direitos reservados. <span class="dev-credits">Desenvolvido por <a href="https://evolutor.com.br/" target="_blank" class="dev-evolutor" rel="noopener">Evolutor</a></span></p>
     </div>
   </div>
 </footer>
@@ -576,7 +577,7 @@
 
     // Simula envio via Formspree (substitua YOUR_FORM_ID pelo ID real)
     const btn = document.getElementById('submit-btn');
-    if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
+    if (btn) { btn.disabled = true; btn.textContent = 'Enviandoâ€¦'; }
 
     fetch(form.action, {
       method: 'POST',
@@ -606,6 +607,7 @@
 </script>
 </body>
 </html>
+
 
 
 
