@@ -448,7 +448,7 @@ function renderDoctorCard(doc) {
 
 function renderServiceCard(svc) {
   const icon = svc.icon
-    ? `<img class="service-icon-img" src="${svc.icon}" alt="" loading="lazy">`
+    ? `<div class="service-icon-img" style="-webkit-mask-image: url('${svc.icon}'); mask-image: url('${svc.icon}');" aria-hidden="true"></div>`
     : '';
   const link = svc.pageUrl
     ? `<a href="${svc.pageUrl}" class="btn-service-more">Saiba mais →</a>`
