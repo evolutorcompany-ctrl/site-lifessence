@@ -11,7 +11,7 @@
   src: url('../fonts/publicaplay-thin.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: url('../fonts/mbf-canno.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 /* ─── CSS Variables ─── */
@@ -205,16 +205,16 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
 .nav-logo-text span:first-child {
   font-family: 'Publica Play', var(--font-body);
   font-size: 1.4rem;
-  font-weight: 500;
-  -webkit-text-stroke: 0.2px currentColor;
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px currentColor;
   color: var(--color-primary);
   letter-spacing: -.5px;
 }
 .nav-logo-text span:last-child {
   font-family: 'Publica Play', var(--font-body);
   font-size: .65rem;
-  font-weight: 500;
-  -webkit-text-stroke: 0.2px currentColor;
+  font-weight: 600;
+  -webkit-text-stroke: 0.4px currentColor;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -968,8 +968,8 @@ textarea.form-control { height: 130px; resize: vertical; }
 .footer-logo {
   font-family: 'Publica Play', var(--font-body);
   font-size: 1.6rem;
-  font-weight: 500;
-  -webkit-text-stroke: 0.2px currentColor;
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px currentColor;
   color: var(--color-text);
   margin-bottom: 16px;
   display: block;
