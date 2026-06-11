@@ -533,19 +533,20 @@ p  { line-height: 1.75; color: var(--color-text-muted); }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(166,22,128,.1);
+  background: transparent;
   border-radius: 50%;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
   transition: var(--transition);
 }
-.service-card-icon svg { width: 28px; height: 28px; fill: var(--color-primary); transition: var(--transition); }
-.service-card:hover .service-card-icon { background: rgba(255,255,255,.2); }
+.service-card-icon svg { width: 28px; height: 28px; fill: var(--color-primary-d); transition: var(--transition); }
+.service-card:hover .service-card-icon { background: transparent; }
 .service-card:hover .service-card-icon svg { fill: #fff; }
 .service-card-body { position: relative; z-index: 1; flex: 1; }
 .service-card-body h5 { font-size: 1rem; margin-bottom: 8px; transition: var(--transition); color: var(--color-text); }
 .service-card-body p { font-size: .85rem; transition: var(--transition); }
+.service-card:hover .service-card-body h5 { color: #fff; }
 .service-card:hover .service-card-body h5 { color: #fff; }
 .service-card:hover .service-card-body p { color: rgba(255,255,255,.8); }
 .service-card-bg {
@@ -804,8 +805,8 @@ textarea.form-control { height: 130px; resize: vertical; }
 .page-hero-inner { position: relative; z-index: 1; }
 .page-hero-sobre { --hero-bg: url('../images/hero-sobre-v2.webp'); }
 .page-hero-especialistas { --hero-bg: url('../images/hero-especialistas-v2.webp'); }
-.page-hero-servicos { --hero-bg: url('../images/11-2_11zon-scaled.webp'); }
-.page-hero-contato { --hero-bg: url('../images/Atriade-por-Rafael-Slovinscki-43-300x200.jpg'); }
+.page-hero-servicos { --hero-bg: url('../images/1-2_11zon-2048x1365.webp'); }
+.page-hero-contato { --hero-bg: url('../images/sobre-equilibrio.webp'); }
 
 .page-hero .label { color: rgba(255,255,255,.7); margin-bottom: 16px; }
 .page-hero h1 { color: #fff; margin-bottom: 16px; }
@@ -1273,7 +1274,7 @@ textarea.form-control { height: 130px; resize: vertical; }
   height: 36px;
   object-fit: contain;
   flex-shrink: 0;
-  filter: invert(20%) sepia(70%) saturate(500%) hue-rotate(280deg);
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(1600%) hue-rotate(295deg) brightness(0.9);
 }
 .btn-service-more {
   display: inline-block;
@@ -1312,20 +1313,15 @@ textarea.form-control { height: 130px; resize: vertical; }
 }
 .service-icon-img {
   width: 28px; height: 28px;
+  object-fit: contain;
   flex-shrink: 0;
-  background-color: var(--color-secondary);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(1600%) hue-rotate(295deg) brightness(0.9);
   transition: var(--transition);
 }
 .service-card:hover .service-icon-img {
-  background-color: #fff;
+  filter: brightness(0) invert(1);
 }
-.service-card-body h5 { font-size: 0.95rem; color: var(--color-secondary); }
+.service-card-body h5 { font-size: 0.95rem; color: var(--color-primary-d); }
 .service-card-body p { font-size: 0.82rem; color: var(--color-text); line-height: 1.6; }
 
 /* ── Btn outline ── */
@@ -1419,7 +1415,7 @@ textarea.form-control { height: 130px; resize: vertical; }
   width: 32px;
   height: 32px;
   object-fit: contain;
-  filter: invert(20%) sepia(70%) saturate(500%) hue-rotate(280deg);
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(1600%) hue-rotate(295deg) brightness(0.9);
   transition: transform var(--transition), filter var(--transition);
   display: block;
 }
@@ -1740,29 +1736,27 @@ textarea.form-control { height: 130px; resize: vertical; }
 .service-pill {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  background: var(--color-bg2);
-  border: 1px solid var(--color-border);
-  border-radius: 100px;
-  font-size: 0.85rem;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-text);
   text-decoration: none;
   transition: var(--transition);
-  margin-right: 8px;
+  margin-right: 16px;
   margin-bottom: 8px;
+  padding: 4px 0;
 }
 .service-pill:hover {
-  background: #fff;
-  border-color: var(--color-primary);
   color: var(--color-primary);
-  box-shadow: var(--shadow-sm);
 }
 .service-icon-pill {
-  width: 18px; height: 18px;
+  width: 24px; height: 24px;
   object-fit: contain;
-  filter: invert(20%) sepia(70%) saturate(500%) hue-rotate(280deg);
+  flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(1600%) hue-rotate(295deg) brightness(0.9);
+  transition: var(--transition);
 }
 
 /* CTA Unified Background */
@@ -1785,8 +1779,10 @@ textarea.form-control { height: 130px; resize: vertical; }
 
 
 
-.page-hero-contato::before { background-position: center 30%; }
+.page-hero-contato::before { background-position: 65% 15%; }
 
-.page-hero-sobre::before { background-position: center 30%; }
+.page-hero-sobre::before { background-position: center 60%; }
 
-.page-hero-especialistas::before { background-position: center 25%; }
+.page-hero-especialistas::before { background-position: center 35%; }
+
+.page-hero-servicos::before { background-position: center 30%; }

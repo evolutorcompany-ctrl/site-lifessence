@@ -177,22 +177,24 @@
     .service-pill {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: var(--color-bg2);
-      border: 1px solid var(--color-border);
+      gap: 10px;
+      background: transparent;
+      border: none;
       color: var(--color-text);
-      font-size: 0.8rem;
-      padding: 5px 12px;
-      border-radius: 100px;
-      margin: 4px 4px 4px 0;
+      font-size: 0.95rem;
+      padding: 8px 0;
+      margin: 4px 16px 4px 0;
       text-decoration: none;
       transition: var(--transition);
+      font-weight: 500;
     }
-    .service-pill:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .service-pill:hover { color: var(--color-primary); }
     .service-icon-pill {
-      width: 16px;
-      height: 16px;
+      width: 24px;
+      height: 24px;
       object-fit: contain;
+      filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(1600%) hue-rotate(295deg) brightness(0.9);
+      transition: var(--transition);
     }
     .sidebar-cta {
       background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
