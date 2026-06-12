@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=19">
+  <link rel="stylesheet" href="assets/css/style.css?v=20">
   <style>
     .services-full-grid {
       display: grid;
@@ -23,12 +23,24 @@
       border: 1px solid var(--color-border);
       background: var(--color-bg);
       transition: var(--transition);
-      cursor: default;
+      cursor: pointer;
+      position: relative;
     }
     .service-full-card:hover {
       box-shadow: var(--shadow-md);
       transform: translateY(-5px);
       border-color: var(--color-primary);
+    }
+    /* Stretched link: o pseudo-elemento ::after cobre todo o card pai */
+    .service-full-card .btn-service-more {
+      position: static;
+    }
+    .service-full-card .btn-service-more::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      cursor: pointer;
     }
     .service-full-card-img {
       width: 100%;
@@ -262,7 +274,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('services-full-grid');
     if (grid && typeof LIFESSENCE !== 'undefined') {
-      grid.innerHTML = LIFESSENCE.services.map(svc => `
+        grid.innerHTML = LIFESSENCE.services.map(svc => `
         <article class="service-full-card fade-in">
           <div class="service-full-card-img-wrap">
             <img class="service-full-card-img"
@@ -277,7 +289,7 @@
               <h3>${svc.name}</h3>
             </div>
             <p>${svc.description}</p>
-            ${svc.pageUrl ? `<a href="${svc.pageUrl}" class="btn-service-more">Saiba mais →</a>` : ''}
+            ${svc.pageUrl ? `<a href="${svc.pageUrl}" class="btn-service-more" aria-label="Saiba mais sobre ${svc.name}">Saiba mais →</a>` : ''}
           </div>
         </article>`).join('');
 
