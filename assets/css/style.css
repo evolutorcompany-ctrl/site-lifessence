@@ -1114,11 +1114,11 @@ textarea.form-control { height: 130px; resize: vertical; }
 }
 @media (max-width: 768px) {
   .espaco-acolhedor-content { padding: 0 32px; }
-  .espaco-acolhedor-banner img { height: 340px; }
+  .espaco-acolhedor-banner img { height: 380px; }
 }
 @media (max-width: 480px) {
   .espaco-acolhedor-content { padding: 0 20px; }
-  .espaco-acolhedor-banner img { height: 280px; }
+  .espaco-acolhedor-banner img { height: 420px; }
 }
 
 /* ─── Animations ─── */
@@ -1977,8 +1977,17 @@ textarea.form-control { height: 130px; resize: vertical; }
   /* Map */
   .map-container { height: 240px; }
 
-  /* Espaco acolhedor */
-  .espaco-acolhedor-banner img { height: 260px; }
+  /* Mobile Nav Btn */
+  .nav-mobile a.btn-primary { color: #ffffff !important; border-bottom: none; }
+
+  /* Sobre page buttons mobile */
+  .about-text a.btn { 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-right: 0 !important; 
+    margin-bottom: 12px; 
+  }
 }
 
 /* ─── 375px: iPhones compactos e Android entry-level ─── */
