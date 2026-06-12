@@ -2,71 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="assets/images/11-2_11zon-scaled.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/images/hero-sobre-v2.webp" as="image" fetchpriority="high">
   <link rel="preload" href="assets/fonts/publicaplay-thin.ttf" as="font" type="font/truetype" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serviços — Lifessence</title>
-  <meta name="description" content="Conheça todos os serviços da Lifessence: Pilates, Fisioterapia, Osteopatia, Yoga, Acupuntura, Estética, Podologia, Psicologia, Nutrição e muito mais em Caxias do Sul.">
+  <title>Trabalhe Conosco — Lifessence</title>
+  <meta name="description" content="Conheça a Lifessence: nossa missão, valores e a história de uma clínica dedicada ao cuidado integral e humanizado em Caxias do Sul, RS.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=20">
-  <style>
-    .services-full-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    .service-full-card {
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      border: 1px solid var(--color-border);
-      background: var(--color-bg);
-      transition: var(--transition);
-      cursor: pointer;
-      position: relative;
-    }
-    .service-full-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-5px);
-      border-color: var(--color-primary);
-    }
-    /* Stretched link: o pseudo-elemento ::after cobre todo o card pai */
-    .service-full-card .btn-service-more {
-      position: static;
-    }
-    .service-full-card .btn-service-more::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      cursor: pointer;
-    }
-    .service-full-card-img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-    }
-    .service-full-card-body {
-      padding: 24px 28px 28px;
-    }
-    .service-full-card-body h3 {
-      font-size: 1.2rem;
-      color: var(--color-primary);
-      margin-bottom: 10px;
-    }
-    .service-full-card-body p {
-      font-size: .9rem;
-      line-height: 1.7;
-    }
-    @media (max-width: 900px) {
-      .services-full-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 560px) {
-      .services-full-grid { grid-template-columns: 1fr; }
-    }
-  </style>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -85,9 +29,9 @@
     </a>
     <ul class="nav-menu">
       <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="sobre.html" >Sobre</a></li>
       <li><a href="especialistas.html">Especialistas</a></li>
-      <li><a href="servicos.html" class="active">Serviços</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contato.html">Contato</a></li>
           <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
@@ -114,67 +58,34 @@
 <main class="page-content">
 
   <!-- Page Hero -->
-  <section class="page-hero page-hero-servicos">
+  <section class="page-hero">
     <div class="container page-hero-inner">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Início</a>
         <span class="sep">›</span>
-        <span>Serviços</span>
+        <span>Trabalhe Conosco</span>
       </nav>
-      <p class="label">Nossas Especialidades</p>
-      <h1>Nossos Serviços</h1>
-      <p>Tratamentos integrados que promovem o equilíbrio entre corpo, mente e espírito.</p>
+      <p class="label">Seja um Profissional Lifessence</p>
+      <h1>Trabalhe Conosco</h1>
+      <p>Junte-se a uma equipe dedicada ao cuidado integral e bem-estar.</p>
     </div>
   </section>
 
-  <!-- Services Full Grid -->
+  <!-- Content -->
   <section class="section-gap">
-    <div class="container">
-      <div class="section-intro">
-        <p class="label fade-in">O que oferecemos</p>
-        <h2 class="fade-in delay-1">Áreas de atuação da Lifessence</h2>
-        <p class="fade-in delay-2">Cada serviço é conduzido por profissionais especializados, com atendimento personalizado e foco no seu bem-estar integral.</p>
-      </div>
-
-      <div class="services-full-grid" id="services-full-grid">
-        <!-- Populado via JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Us -->
-  <section style="background:var(--color-bg2); padding:100px 0;">
-    <div class="container">
-      <div class="about-section">
-        <div class="about-text fade-in-left">
-          <p class="label">Por que a Lifessence</p>
-          <h2>Abordagem multidisciplinar para o seu cuidado completo</h2>
-          <p>Na Lifessence, acreditamos que a saúde é mais do que a ausência de doenças. Por isso, reunimos especialidades complementares que atuam juntas para promover o seu bem-estar integral.</p>
-          <ul class="check-list">
-            <li>Equipe multidisciplinar integrada;</li>
-            <li>Atendimento personalizado e humanizado;</li>
-            <li>Ambiente acolhedor e preparado para o seu conforto;</li>
-            <li>Protocolos baseados em evidências científicas.</li>
-          </ul>
-          <a href="contato.html" class="btn btn-primary">Agendar consulta</a>
-        </div>
-        <div class="about-img-wrap fade-in-right">
-          <img src="assets/images/servicos-multidisciplinar.webp"
-               alt="Equipe multidisciplinar Lifessence" loading="lazy">
-        </div>
+    <div class="container text-center" style="max-width:800px; margin:0 auto;">
+      <h2 class="fade-in">Oportunidades Futuras</h2>
+      <p class="fade-in delay-1" style="font-size: 1.1rem; line-height: 1.8; margin-top: 24px; color: var(--color-text-muted);">
+        Estamos preparando novas oportunidades para integrar profissionais à equipe Lifessence. 
+        Em breve disponibilizaremos mais informações e um espaço exclusivo para envio de currículo.
+      </p>
+      <div style="margin-top: 40px;" class="fade-in delay-2">
+        <a href="contato.html" class="btn btn-primary">Fale Conosco</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-unified">
-    <div class="container text-center">
-      <h2 class="fade-in" style="color:var(--color-text); margin-bottom:16px;">Pronto para começar?</h2>
-      <p class="fade-in delay-1" style="color:var(--color-text-muted); margin-bottom:32px;">Entre em contato e descubra qual serviço é ideal para você.</p>
-      <a href="contato.html" class="btn btn-primary fade-in delay-2">Falar com a equipe</a>
-    </div>
-  </section>
-
+</main>
 
 <!-- Separador CTA para Footer -->
 <div class="cta-footer-divider" aria-hidden="true"></div>
@@ -273,41 +184,9 @@
 
 <script src="assets/js/data.js?v=4"></script>
 <script src="assets/js/main.js?v=4"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const grid = document.getElementById('services-full-grid');
-    if (grid && typeof LIFESSENCE !== 'undefined') {
-        grid.innerHTML = LIFESSENCE.services.map(svc => `
-        <article class="service-full-card fade-in">
-          <div class="service-full-card-img-wrap">
-            <img class="service-full-card-img"
-                 src="${svc.image}"
-                 alt="${svc.name}"
-                 loading="lazy"
-                 onerror="this.style.background='linear-gradient(135deg,#f0e8ed,#e8d5e8)';this.style.minHeight='220px';">
-          </div>
-          <div class="service-full-card-body">
-            <div class="service-full-card-title-row">
-              ${svc.icon ? `<img src="${svc.icon}" alt="" class="service-full-icon" loading="lazy">` : ''}
-              <h3>${svc.name}</h3>
-            </div>
-            <p>${svc.description}</p>
-            ${svc.pageUrl ? `<a href="${svc.pageUrl}" class="btn-service-more" aria-label="Saiba mais sobre ${svc.name}">Saiba mais →</a>` : ''}
-          </div>
-        </article>`).join('');
-
-      setTimeout(() => {
-        document.querySelectorAll('.fade-in:not(.visible)').forEach(el => {
-          new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-          }, { threshold: 0.08 }).observe(el);
-        });
-      }, 100);
-    }
-  });
-</script>
 </body>
 </html>
+
 
 
 

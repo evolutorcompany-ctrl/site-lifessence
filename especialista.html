@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=19">
+  <link rel="stylesheet" href="assets/css/style.css?v=20">
   <style>
     /* ── Perfil Hero ───────────────────── */
     .profile-hero {
@@ -245,6 +245,7 @@
       <li><a href="servicos.html">Serviços</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contato.html">Contato</a></li>
+          <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
     </ul>
     <div class="nav-cta">
       <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
@@ -301,6 +302,7 @@
           <li><a href="servicos.html">Servi&#231;os</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -316,6 +318,7 @@
                 <li><a href="servico.html?slug=psicologia">Psicologia</a></li>
                 <li><a href="servico.html?slug=yoga">Yoga</a></li>
                 <li><a href="servico.html?slug=estetica-avancada">Est&#233;tica Avan&#231;ada</a></li>
+                <li><a href="servico.html?slug=nutricao">Nutrição</a></li>
               </ul>
       </div>
       <div class="footer-col">
@@ -337,7 +340,7 @@
             <div class="fci-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <div class="fci-text">Segunda a Sexta: 08:00 &#8211; 20:00<br>S&#225;bado: 08:00 &#8211; 19:30</div>
+            <div class="fci-text">Segunda a Sexta: 08:00 às 19:30<br>S&#225;bado: 08:00 &#8211; 19:30</div>
           </div>
           <div class="footer-contact-item">
             <div class="fci-icon">
@@ -414,21 +417,17 @@ document.addEventListener('DOMContentLoaded', () => {
   ].filter(Boolean).join('');
 
   main.innerHTML = `
-    <!-- Breadcrumb -->
-    <section class="page-hero" style="padding:40px 0 0;">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
-          <span class="sep">›</span>
-          <a href="especialistas.html">Especialistas</a>
-          <span class="sep">›</span>
-          <span>${doc.name}</span>
-        </nav>
-      </div>
-    </section>
-
     <!-- Profile Hero -->
     <section class="profile-hero">
+      <div class="container" style="margin-bottom: 32px;">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="justify-content: flex-start; color: var(--color-text-muted);">
+          <a href="index.html" style="color: var(--color-text-muted);">Início</a>
+          <span class="sep">›</span>
+          <a href="especialistas.html" style="color: var(--color-text-muted);">Especialistas</a>
+          <span class="sep">›</span>
+          <span style="color: var(--color-primary); font-weight: 500;">${doc.name}</span>
+        </nav>
+      </div>
       <div class="container profile-hero-inner">
         <div class="profile-photo-wrap">
           ${doc.photo

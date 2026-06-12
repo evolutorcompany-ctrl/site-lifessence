@@ -61,10 +61,10 @@ const LIFESSENCE = {
       name: "Francielle Domingues",
       slug: "francielle-domingues",
       photo: "assets/images/professionals/francielle-domingues.png",
-      specialty: "Professora de Yoga | Reiki",
+      specialty: "Professora de Yoga",
       certifications: "Francielle Teixeira Domingues é uma profissional dedicada ao equilíbrio integral do ser, unindo técnicas corporais, meditativas e energéticas para promover bem-estar e autoconhecimento. Acredita que a transformação pessoal ocorre por meio da conexão entre corpo e mente, utilizando abordagens como Yoga, meditação e Reiki para guiar seus alunos em um caminho de maior consciência e harmonia.",
       education: "Aulas individuais de Yoga adaptadas às necessidades e objetivos do aluno. Práticas fluídas e meditativas para equilíbrio físico, mental e emocional.",
-      experience: "Atendimento personalizado com aulas estruturadas conforme o nível e os objetivos do aluno. As práticas podem ser realizadas em domicílio ou em espaço adequado.",
+      experience: "Atendimento personalizado com aulas estruturadas conforme o nível e os objetivos do aluno.",
       services: ["yoga"],
       pageUrl: "especialista.html?slug=francielle-domingues"
     },
@@ -73,7 +73,7 @@ const LIFESSENCE = {
       name: "Lídia Castilhos",
       slug: "lidia-castilhos",
       photo: "assets/images/professionals/lidia-castilhos.png",
-      specialty: "Podologista",
+      specialty: "Podóloga",
       certifications: "Lídia Castilhos possui formação técnica em Podologia pela UCS e graduação em Economia pela mesma instituição. Sua prática é voltada para a aplicação de métodos técnicos na avaliação e tratamento das condições dos pés.",
       education: "Avaliação e tratamento de condições podológicas. Tratamento com laser para micose nas unhas. Procedimentos para correção de unha encravada e calosidades.",
       experience: "Atuação fundamentada em conhecimentos técnicos adquiridos durante sua formação. A prática clínica é orientada pela análise cuidadosa de cada caso.",
@@ -98,7 +98,7 @@ const LIFESSENCE = {
       slug: "carolina-nazzari",
       photo: "assets/images/professionals/carolina-nazzari.png",
       specialty: "Fisioterapeuta",
-      certifications: "Carolina Nazzari é fisioterapeuta formada desde 2016, com pós-graduação em Fisioterapia Manipulativa (técnicas manuais) concluída em 2018. Possui formação complementar em Pilates e diversos cursos voltados para técnicas manuais, liberação miofascial e movimentos funcionais. Seu atendimento é voltado para a recuperação e prevenção de disfunções musculoesqueléticas, promovendo a qualidade de vida por meio de abordagens terapêuticas adaptadas à necessidade de cada paciente.",
+      certifications: "Especialização em Fisioterapia Esportiva (2022). Carolina Nazzari é fisioterapeuta formada desde 2016, com pós-graduação em Fisioterapia Manipulativa (técnicas manuais) concluída em 2018. Possui formação complementar em Pilates e diversos cursos voltados para técnicas manuais, liberação miofascial e movimentos funcionais. Seu atendimento é voltado para a recuperação e prevenção de disfunções musculoesqueléticas, promovendo a qualidade de vida por meio de abordagens terapêuticas adaptadas à necessidade de cada paciente.",
       education: "Atendimento personalizado com técnicas como ventosaterapia, agulhamento seco, terapias manuais e eletroterapia. Inclui fisioterapia desportiva para prevenção e tratamento de lesões.",
       experience: "Atendimento estruturado para oferecer soluções eficientes e personalizadas, combinando técnicas variadas conforme a necessidade de cada paciente.",
       services: ["fisioterapia-esportiva"],
@@ -109,11 +109,11 @@ const LIFESSENCE = {
       name: "Emanuele Rizzon",
       slug: "emanuele-rizzon",
       photo: "assets/images/professionals/emanuele-rizzon.png",
-      specialty: "Fisioterapeuta | Instrutora de Pilates",
+      specialty: "Fisioterapeuta | Instrutora de Pilates | Massoterapeuta",
       certifications: "Emanuele Rizzon oferece atendimento voltado à recuperação funcional, utilizando técnicas fisioterapêuticas que promovem equilíbrio muscular e melhora da mobilidade. Suas abordagens são indicadas tanto para reabilitação quanto para fortalecimento e prevenção de dores e lesões.",
       education: "Pilates Solo com Acessórios e Equipamentos. Fisioterapia indicada para reabilitação pós-lesão, dores musculoesqueléticas e condicionamento físico.",
       experience: "Atendimentos adaptados às necessidades de cada paciente, proporcionando cuidado direcionado e eficaz para a reabilitação e fortalecimento do corpo.",
-      services: ["pilates"],
+      services: ["pilates", "massoterapia"],
       pageUrl: "especialista.html?slug=emanuele-rizzon"
     },
     {
@@ -133,8 +133,8 @@ const LIFESSENCE = {
       name: "Ana Carolina Alende",
       slug: "ana-carolina",
       photo: "assets/images/professionals/ana-carolina-alende.png",
-      specialty: "Fisioterapeuta Pélvica | Instrutora de Pilates",
-      certifications: "Ana Carolina Alende é formada em Fisioterapia pela Universidade Luterana do Brasil – Campus Santa Maria (2021) e possui formação em Pilates pelo Instituto Golden, em Porto Alegre/RS. Atualmente, realiza pós-graduação em Fisioterapia na Saúde da Mulher na Faculdade Dom Alberto de Santa Cruz/RS. Sua atuação se concentra na prática clínica fundamentada em abordagens específicas para a saúde pélvica e no aprimoramento dos métodos do Pilates.",
+      specialty: "Especialista em Fisioterapia Pélvica",
+      certifications: "Ana Carolina Alende é formada em Fisioterapia pela Universidade Luterana do Brasil – Campus Santa Maria (2021) e possui formação em Pilates pelo Instituto Golden, em Porto Alegre/RS. Atualmente, realiza pós-graduação em Fisioterapia na Saúde da Mulher na Faculdade Dom Alberto de Santa Cruz/RS. Sua atuação se concentra na prática clínica fundamentada em abordagens específicas para a saúde pélvica e no aprimoramento dos métodos do Pilates. Especialização em Fisioterapia Pélvica (2025).",
       education: "Fisioterapia Pélvica com avaliação e condução de tratamentos direcionados à saúde pélvica feminina. Pilates com sessões orientadas para fortalecimento, mobilidade e equilíbrio.",
       experience: "Prática que integra conhecimentos teóricos e práticos com contínua atualização profissional, com foco na saúde integral da mulher.",
       services: ["fisioterapia-pelvica", "pilates"],
@@ -145,12 +145,48 @@ const LIFESSENCE = {
       name: "Amanda Arruda",
       slug: "amanda-arruda",
       photo: "assets/images/professionals/amanda-arruda.png",
-      specialty: "Fisioterapeuta | Instrutora de Pilates",
+      specialty: "Fisioterapeuta | Instrutora de Pilates | Massoterapeuta",
       certifications: "Amanda Arruda atua na promoção da saúde e qualidade de vida por meio do Pilates, auxiliando na reabilitação, fortalecimento muscular e alinhamento postural. Seus atendimentos são voltados para pessoas que buscam mais equilíbrio e consciência corporal.",
       education: "Pilates: exercícios que melhoram a postura, aumentam a flexibilidade e fortalecem a musculatura, promovendo alinhamento corporal e prevenindo dores e lesões.",
       experience: "Cada sessão é estruturada conforme a necessidade do paciente, proporcionando acompanhamento individualizado para alcançar os melhores resultados.",
       services: ["pilates"],
       pageUrl: "especialista.html?slug=amanda-arruda"
+    },
+    {
+      id: 39901,
+      name: "Juan",
+      slug: "juan",
+      photo: "",
+      specialty: "Informações em desenvolvimento",
+      certifications: "Informações em desenvolvimento",
+      education: "Perfil profissional em atualização",
+      experience: "Dados serão adicionados futuramente",
+      services: [],
+      pageUrl: "especialista.html?slug=juan"
+    },
+    {
+      id: 39902,
+      name: "Paula",
+      slug: "paula",
+      photo: "",
+      specialty: "Informações em desenvolvimento",
+      certifications: "Informações em desenvolvimento",
+      education: "Perfil profissional em atualização",
+      experience: "Dados serão adicionados futuramente",
+      services: [],
+      pageUrl: "especialista.html?slug=paula"
+    },
+    {
+      id: 39903,
+      name: "Marília",
+      slug: "marilia",
+      photo: "",
+      specialty: "Informações em desenvolvimento",
+      certifications: "Informações em desenvolvimento",
+      education: "Perfil profissional em atualização",
+      experience: "Dados serão adicionados futuramente",
+      services: [],
+      pageUrl: "especialista.html?slug=marilia"
     }
   ],
 
@@ -287,7 +323,7 @@ const LIFESSENCE = {
       faqs: [],
       image: "assets/images/services/massoterapia.webp",
       icon: "assets/images/icons/Massoterapia.svg",
-      professionals: [],
+      professionals: ["emanuele-rizzon"],
       pageUrl: "servico.html?slug=massoterapia"
     },
     {
@@ -357,6 +393,19 @@ const LIFESSENCE = {
       icon: "assets/images/icons/Yoga.svg",
       professionals: ["francielle-domingues"],
       pageUrl: "servico.html?slug=yoga"
+    },
+    {
+      id: 39910,
+      name: "Nutrição",
+      slug: "nutricao",
+      description: "Informações em breve.",
+      longDescription: "Conteúdo em desenvolvimento.",
+      benefits: ["Detalhes serão adicionados futuramente"],
+      faqs: [],
+      image: "",
+      icon: "",
+      professionals: [],
+      pageUrl: "servico.html?slug=nutricao"
     }
   ],
 
@@ -418,7 +467,7 @@ const LIFESSENCE = {
     phone: "(54) 98154-1639",
     email: "lifessence@lifessence.com.br",
     address: "Avenida Rio Branco, 1718, Caxias do Sul, RS 95096-000",
-    hours: "Segunda a Sexta: 08:00 – 20:00 | Sáb: 08:00 – 19:30",
+    hours: "Segunda a Sexta: 08:00 às 19:30 | Sábado: 08:00 às 19:30",
     instagram: "https://www.instagram.com/lifessencesaudeebemestar/",
     facebook: "https://www.facebook.com/lifessencesaudeebemestar/"
   }
