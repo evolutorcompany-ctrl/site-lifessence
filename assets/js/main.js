@@ -35,7 +35,7 @@
   });
 
   // Active link highlight
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPage = window.location.pathname.split('/').pop() || '/';
   document.querySelectorAll('.nav-menu a, #nav-mobile a').forEach(link => {
     if (link.getAttribute('href') === currentPage) {
       link.classList.add('active');
