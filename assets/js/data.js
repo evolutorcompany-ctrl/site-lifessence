@@ -9,6 +9,115 @@ const LIFESSENCE = {
   /* ── PROFISSIONAIS DE SAÚDE ─────────────────────────────── */
   doctors: [
     {
+      id: 39572,
+      name: "Amanda Arruda",
+      slug: "amanda-arruda",
+      photo: "assets/images/professionals/amanda-arruda.png",
+      specialty: "Fisioterapeuta | Instrutora de Pilates | Massoterapeuta",
+      certifications: "Amanda Arruda atua na promoção da saúde e qualidade de vida por meio do Pilates, auxiliando na reabilitação, fortalecimento muscular e alinhamento postural. Seus atendimentos são voltados para pessoas que buscam mais equilíbrio e consciência corporal.",
+      education: "Pilates: exercícios que melhoram a postura, aumentam a flexibilidade e fortalecem a musculatura, promovendo alinhamento corporal e prevenindo dores e lesões.",
+      experience: "Cada sessão é estruturada conforme a necessidade do paciente, proporcionando acompanhamento individualizado para alcançar os melhores resultados.",
+      services: ["pilates"],
+      pageUrl: "especialista.html?slug=amanda-arruda"
+    },
+    {
+      id: 39570,
+      name: "Ana Carolina Alende",
+      slug: "ana-carolina",
+      photo: "assets/images/professionals/ana-carolina-alende.png",
+      specialty: "Especialista em Fisioterapia Pélvica",
+      certifications: "Ana Carolina Alende é formada em Fisioterapia pela Universidade Luterana do Brasil – Campus Santa Maria (2021) e possui formação em Pilates pelo Instituto Golden, em Porto Alegre/RS. Atualmente, realiza pós-graduação em Fisioterapia na Saúde da Mulher na Faculdade Dom Alberto de Santa Cruz/RS. Sua atuação se concentra na prática clínica fundamentada em abordagens específicas para a saúde pélvica e no aprimoramento dos métodos do Pilates. Especialização em Fisioterapia Pélvica (2025).",
+      education: "Fisioterapia Pélvica com avaliação e condução de tratamentos direcionados à saúde pélvica feminina. Pilates com sessões orientadas para fortalecimento, mobilidade e equilíbrio.",
+      experience: "Prática que integra conhecimentos teóricos e práticos com contínua atualização profissional, com foco na saúde integral da mulher.",
+      services: ["fisioterapia-pelvica", "pilates"],
+      pageUrl: "especialista.html?slug=ana-carolina"
+    },
+    {
+      id: 39564,
+      name: "Carolina Nazzari",
+      slug: "carolina-nazzari",
+      photo: "assets/images/professionals/carolina-nazzari.png",
+      specialty: "Fisioterapeuta",
+      certifications: "Especialização em Fisioterapia Esportiva (2022). Carolina Nazzari é fisioterapeuta formada desde 2016, com pós-graduação em Fisioterapia Manipulativa (técnicas manuais) concluída em 2018. Possui formação complementar em Pilates e diversos cursos voltados para técnicas manuais, liberação miofascial e movimentos funcionais. Seu atendimento é voltado para a recuperação e prevenção de disfunções musculoesqueléticas, promovendo a qualidade de vida por meio de abordagens terapêuticas adaptadas à necessidade de cada paciente.",
+      education: "Atendimento personalizado com técnicas como ventosaterapia, agulhamento seco, terapias manuais e eletroterapia. Inclui fisioterapia desportiva para prevenção e tratamento de lesões.",
+      experience: "Atendimento estruturado para oferecer soluções eficientes e personalizadas, combinando técnicas variadas conforme a necessidade de cada paciente.",
+      services: ["fisioterapia-esportiva"],
+      pageUrl: "especialista.html?slug=carolina-nazzari"
+    },
+    {
+      id: 40761,
+      name: "Clarice Ferreira",
+      slug: "clarice-ferreira",
+      photo: "assets/images/professionals/clarice.jpg",
+      specialty: "Recepção e Marketing",
+      certifications: "Responsável pelo acolhimento na recepção e pelas estratégias de comunicação e marketing da clínica, garantindo que nossos valores cheguem até você.",
+      education: "Atendimento ao paciente e ações de marketing digital.",
+      experience: "Integra o cuidado na recepção com a gestão da comunicação visual e institucional.",
+      services: [],
+      pageUrl: ""
+    },
+    {
+      id: 39565,
+      name: "Emanuele Rizzon",
+      slug: "emanuele-rizzon",
+      photo: "assets/images/professionals/emanuele-rizzon.png",
+      specialty: "Fisioterapeuta | Instrutora de Pilates | Massoterapeuta",
+      certifications: "Emanuele Rizzon oferece atendimento voltado à recuperação funcional, utilizando técnicas fisioterapêuticas que promovem equilíbrio muscular e melhora da mobilidade. Suas abordagens são indicadas tanto para reabilitação quanto para fortalecimento e prevenção de dores e lesões.",
+      education: "Pilates Solo com Acessórios e Equipamentos. Fisioterapia indicada para reabilitação pós-lesão, dores musculoesqueléticas e condicionamento físico.",
+      experience: "Atendimentos adaptados às necessidades de cada paciente, proporcionando cuidado direcionado e eficaz para a reabilitação e fortalecimento do corpo.",
+      services: ["pilates", "massoterapia"],
+      pageUrl: "especialista.html?slug=emanuele-rizzon"
+    },
+    {
+      id: 39559,
+      name: "Francielle Domingues",
+      slug: "francielle-domingues",
+      photo: "assets/images/professionals/francielle-domingues.png",
+      specialty: "Professora de Yoga",
+      certifications: "Francielle Teixeira Domingues é uma profissional dedicada ao equilíbrio integral do ser, unindo técnicas corporais, meditativas e energéticas para promover bem-estar e autoconhecimento. Acredita que a transformação pessoal ocorre por meio da conexão entre corpo e mente, utilizando abordagens como Yoga, meditação e Reiki para guiar seus alunos em um caminho de maior consciência e harmonia.",
+      education: "Aulas individuais de Yoga adaptadas às necessidades e objetivos do aluno. Práticas fluídas e meditativas para equilíbrio físico, mental e emocional.",
+      experience: "Atendimento personalizado com aulas estruturadas conforme o nível e os objetivos do aluno.",
+      services: ["yoga"],
+      pageUrl: "especialista.html?slug=francielle-domingues"
+    },
+    {
+      id: 39563,
+      name: "Gabrielly Rodrigues",
+      slug: "gabrielly-rodrigues",
+      photo: "assets/images/professionals/gabrielly-rodrigues.png",
+      specialty: "Biomédica | Acupunturista",
+      certifications: "Gabrielly iniciou sua trajetória em 2013, atuando na área administrativa de um hospital, experiência que ampliou sua visão sobre o setor da saúde. Em 2016 passou a trabalhar como técnica em enfermagem e, paralelamente, iniciou os estudos em Biomedicina. Formada em 2020 com ênfase em Patologia Clínica, ampliou suas possibilidades ao se especializar em Acupuntura por meio da Associação Brasileira de Acupuntura – ABA. Sua formação também inclui uma pós-graduação em Saúde Estética, reforçando sua prática integrativa.",
+      education: "A acupuntura é uma prática da medicina tradicional chinesa que utiliza agulhas finas para estimular pontos específicos do corpo, promovendo equilíbrio energético, alívio da dor e bem-estar.",
+      experience: "Prática baseada na compreensão individualizada do paciente, utilizando os conhecimentos adquiridos ao longo da formação para contribuir com o equilíbrio e o bem-estar.",
+      services: ["acupuntura"],
+      pageUrl: "especialista.html?slug=gabrielly-rodrigues"
+    },
+    {
+      id: 39901,
+      name: "Juan Hilbert",
+      slug: "juan-hilbert",
+      photo: "assets/images/professionals/juan-hilbert.jpg",
+      photoPosition: "center 25%",
+      specialty: "Fisioterapeuta e Instrutor de Pilates",
+      certifications: "Formado em Fisioterapia pela Universidade Federal de Santa Catarina (UFSC) e especialista em traumato-ortopedia.",
+      education: "Aulas de Pilates com foco em movimento consciente, postura, fortalecimento e prevenção de lesões, respeitando as necessidades individuais.",
+      experience: "Acompanhamento focado na evolução segura e eficiente, promovendo um espaço de aprendizado e bem-estar.",
+      services: ["pilates"],
+      pageUrl: "especialista.html?slug=juan-hilbert"
+    },
+    {
+      id: 39562,
+      name: "Lídia Castilhos",
+      slug: "lidia-castilhos",
+      photo: "assets/images/professionals/lidia-castilhos.png",
+      specialty: "Podóloga",
+      certifications: "Lídia Castilhos possui formação técnica em Podologia pela UCS e graduação em Economia pela mesma instituição. Sua prática é voltada para a aplicação de métodos técnicos na avaliação e tratamento das condições dos pés.",
+      education: "Avaliação e tratamento de condições podológicas. Tratamento com laser para micose nas unhas. Procedimentos para correção de unha encravada e calosidades.",
+      experience: "Atuação fundamentada em conhecimentos técnicos adquiridos durante sua formação. A prática clínica é orientada pela análise cuidadosa de cada caso.",
+      services: ["podologia"],
+      pageUrl: "especialista.html?slug=lidia-castilhos"
+    },
+    {
       id: 39543,
       name: "Lucas Pezzi",
       slug: "lucas-pezzi",
@@ -33,88 +142,41 @@ const LIFESSENCE = {
       pageUrl: "especialista.html?slug=maira-tonetta"
     },
     {
-      id: 39556,
-      name: "Sabrina Stapasolla",
-      slug: "sabrina-stapasolla",
-      photo: "assets/images/professionals/sabrina-stapasolla.png",
-      specialty: "Fisioterapeuta | Osteopata",
-      certifications: "Sabrina atua com terapias manuais desde 2006. Formada em Fisioterapia e em Osteopatia pelo Instituto Brasileiro de Osteopatia (OIA – Bélgica), ela integra sua prática com conhecimentos que fortalecem a condução dos tratamentos. Como idealizadora da Clínica Lifessence, ela contribui para a estruturação de um espaço voltado à promoção da saúde e do bem-estar.",
-      education: "Atendimento fisioterapêutico e osteopático com abordagem integrativa. Técnicas manuais, mobilização articular e reabilitação funcional personalizada.",
-      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, combinando fisioterapia convencional e princípios osteopáticos.",
-      services: ["osteopatia"],
-      pageUrl: "especialista.html?slug=sabrina-stapasolla"
+      id: 39903,
+      name: "Marília Chagas",
+      slug: "marilia-chagas",
+      photo: "assets/images/professionals/marilia-chagas.jpg",
+      specialty: "Nutricionista Clínica",
+      certifications: "Muito prazer, eu sou Marília Chagas e chego à Lifessence com um propósito claro: transformar sua rotina em aliada da sua saúde - sem que isso vire um desafio impossível.",
+      education: "Análise de contexto: Seus exames, seu histórico e sua rotina real são o ponto de partida. Educação, não apenas prescrição: Você entende o porquê de cada escolha. A meta é autonomia, segurança e clareza nas decisões do dia a dia.",
+      experience: "Foco na alta: Meu trabalho é para que você evolua até não depender mais de mim. Independência alimentar também é cuidado. Consultas estratégicas, plano adaptado à sua realidade, receitas possíveis e suporte para dúvidas.",
+      services: ["nutricao"],
+      pageUrl: "especialista.html?slug=marilia-chagas"
     },
     {
-      id: 39558,
-      name: "Raquel Giovanella",
-      slug: "raquel-giovanella",
-      photo: "assets/images/professionals/raquel-giovanella.png",
-      specialty: "Esteticista | Especialista em Estética Avançada",
-      certifications: "Raquel Giovanella oferece tratamentos estéticos voltados para a revitalização da pele e a harmonização facial. Seus procedimentos utilizam tecnologias e técnicas especializadas para promover resultados seguros e eficazes.",
-      education: "Tratamentos faciais e corporais personalizados. Procedimentos estéticos avançados com foco em resultados naturais e seguros.",
-      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, priorizando resultados naturais e duradouros.",
-      services: ["estetica-avancada"],
-      pageUrl: "especialista.html?slug=raquel-giovanella"
+      id: 40764,
+      name: "Milena Saibe",
+      slug: "milena-saibe",
+      photo: "assets/images/professionals/milena.jpg",
+      specialty: "Coordenadora da Recepção",
+      certifications: "Responsável por garantir que sua experiência na Lifessence seja acolhedora e organizada, desde o primeiro contato até o final do seu atendimento.",
+      education: "Atendimento ao público e gestão da recepção.",
+      experience: "Coordenação da equipe de recepção, priorizando o bem-estar e o acolhimento dos pacientes.",
+      services: [],
+      pageUrl: ""
     },
     {
-      id: 39559,
-      name: "Francielle Domingues",
-      slug: "francielle-domingues",
-      photo: "assets/images/professionals/francielle-domingues.png",
-      specialty: "Professora de Yoga",
-      certifications: "Francielle Teixeira Domingues é uma profissional dedicada ao equilíbrio integral do ser, unindo técnicas corporais, meditativas e energéticas para promover bem-estar e autoconhecimento. Acredita que a transformação pessoal ocorre por meio da conexão entre corpo e mente, utilizando abordagens como Yoga, meditação e Reiki para guiar seus alunos em um caminho de maior consciência e harmonia.",
-      education: "Aulas individuais de Yoga adaptadas às necessidades e objetivos do aluno. Práticas fluídas e meditativas para equilíbrio físico, mental e emocional.",
-      experience: "Atendimento personalizado com aulas estruturadas conforme o nível e os objetivos do aluno.",
-      services: ["yoga"],
-      pageUrl: "especialista.html?slug=francielle-domingues"
-    },
-    {
-      id: 39562,
-      name: "Lídia Castilhos",
-      slug: "lidia-castilhos",
-      photo: "assets/images/professionals/lidia-castilhos.png",
-      specialty: "Podóloga",
-      certifications: "Lídia Castilhos possui formação técnica em Podologia pela UCS e graduação em Economia pela mesma instituição. Sua prática é voltada para a aplicação de métodos técnicos na avaliação e tratamento das condições dos pés.",
-      education: "Avaliação e tratamento de condições podológicas. Tratamento com laser para micose nas unhas. Procedimentos para correção de unha encravada e calosidades.",
-      experience: "Atuação fundamentada em conhecimentos técnicos adquiridos durante sua formação. A prática clínica é orientada pela análise cuidadosa de cada caso.",
-      services: ["podologia"],
-      pageUrl: "especialista.html?slug=lidia-castilhos"
-    },
-    {
-      id: 39563,
-      name: "Gabrielly Rodrigues",
-      slug: "gabrielly-rodrigues",
-      photo: "assets/images/professionals/gabrielly-rodrigues.png",
-      specialty: "Biomédica | Acupunturista",
-      certifications: "Gabrielly iniciou sua trajetória em 2013, atuando na área administrativa de um hospital, experiência que ampliou sua visão sobre o setor da saúde. Em 2016 passou a trabalhar como técnica em enfermagem e, paralelamente, iniciou os estudos em Biomedicina. Formada em 2020 com ênfase em Patologia Clínica, ampliou suas possibilidades ao se especializar em Acupuntura por meio da Associação Brasileira de Acupuntura – ABA. Sua formação também inclui uma pós-graduação em Saúde Estética, reforçando sua prática integrativa.",
-      education: "A acupuntura é uma prática da medicina tradicional chinesa que utiliza agulhas finas para estimular pontos específicos do corpo, promovendo equilíbrio energético, alívio da dor e bem-estar.",
-      experience: "Prática baseada na compreensão individualizada do paciente, utilizando os conhecimentos adquiridos ao longo da formação para contribuir com o equilíbrio e o bem-estar.",
-      services: ["acupuntura"],
-      pageUrl: "especialista.html?slug=gabrielly-rodrigues"
-    },
-    {
-      id: 39564,
-      name: "Carolina Nazzari",
-      slug: "carolina-nazzari",
-      photo: "assets/images/professionals/carolina-nazzari.png",
-      specialty: "Fisioterapeuta",
-      certifications: "Especialização em Fisioterapia Esportiva (2022). Carolina Nazzari é fisioterapeuta formada desde 2016, com pós-graduação em Fisioterapia Manipulativa (técnicas manuais) concluída em 2018. Possui formação complementar em Pilates e diversos cursos voltados para técnicas manuais, liberação miofascial e movimentos funcionais. Seu atendimento é voltado para a recuperação e prevenção de disfunções musculoesqueléticas, promovendo a qualidade de vida por meio de abordagens terapêuticas adaptadas à necessidade de cada paciente.",
-      education: "Atendimento personalizado com técnicas como ventosaterapia, agulhamento seco, terapias manuais e eletroterapia. Inclui fisioterapia desportiva para prevenção e tratamento de lesões.",
-      experience: "Atendimento estruturado para oferecer soluções eficientes e personalizadas, combinando técnicas variadas conforme a necessidade de cada paciente.",
-      services: ["fisioterapia-esportiva"],
-      pageUrl: "especialista.html?slug=carolina-nazzari"
-    },
-    {
-      id: 39565,
-      name: "Emanuele Rizzon",
-      slug: "emanuele-rizzon",
-      photo: "assets/images/professionals/emanuele-rizzon.png",
-      specialty: "Fisioterapeuta | Instrutora de Pilates | Massoterapeuta",
-      certifications: "Emanuele Rizzon oferece atendimento voltado à recuperação funcional, utilizando técnicas fisioterapêuticas que promovem equilíbrio muscular e melhora da mobilidade. Suas abordagens são indicadas tanto para reabilitação quanto para fortalecimento e prevenção de dores e lesões.",
-      education: "Pilates Solo com Acessórios e Equipamentos. Fisioterapia indicada para reabilitação pós-lesão, dores musculoesqueléticas e condicionamento físico.",
-      experience: "Atendimentos adaptados às necessidades de cada paciente, proporcionando cuidado direcionado e eficaz para a reabilitação e fortalecimento do corpo.",
-      services: ["pilates", "massoterapia"],
-      pageUrl: "especialista.html?slug=emanuele-rizzon"
+      id: 39902,
+      name: "Paula Simões",
+      slug: "paula-simoes",
+      photo: "assets/images/professionals/paula-simoes.jpg",
+      photoPosition: "center 12%",
+      specialty: "Fisioterapeuta e Instrutora de Pilates",
+      certifications: "Formada em Fisioterapia pela Universidade FEEVALE, acredito que o movimento é uma ferramenta poderosa para promover saúde, qualidade de vida e autonomia.",
+      education: "Meu objetivo aqui na Life é oferecer um atendimento humanizado e por meio dele promover flexibilidade, equilíbrio, maior força muscular e resistência.",
+      experience: "Estou animada para fazer parte da sua jornada, promovendo saúde, movimento e qualidade de vida através do Pilates.",
+      services: ["pilates"],
+      pageUrl: "especialista.html?slug=paula-simoes"
     },
     {
       id: 39569,
@@ -129,64 +191,28 @@ const LIFESSENCE = {
       pageUrl: "especialista.html?slug=priscila-pail"
     },
     {
-      id: 39570,
-      name: "Ana Carolina Alende",
-      slug: "ana-carolina",
-      photo: "assets/images/professionals/ana-carolina-alende.png",
-      specialty: "Especialista em Fisioterapia Pélvica",
-      certifications: "Ana Carolina Alende é formada em Fisioterapia pela Universidade Luterana do Brasil – Campus Santa Maria (2021) e possui formação em Pilates pelo Instituto Golden, em Porto Alegre/RS. Atualmente, realiza pós-graduação em Fisioterapia na Saúde da Mulher na Faculdade Dom Alberto de Santa Cruz/RS. Sua atuação se concentra na prática clínica fundamentada em abordagens específicas para a saúde pélvica e no aprimoramento dos métodos do Pilates. Especialização em Fisioterapia Pélvica (2025).",
-      education: "Fisioterapia Pélvica com avaliação e condução de tratamentos direcionados à saúde pélvica feminina. Pilates com sessões orientadas para fortalecimento, mobilidade e equilíbrio.",
-      experience: "Prática que integra conhecimentos teóricos e práticos com contínua atualização profissional, com foco na saúde integral da mulher.",
-      services: ["fisioterapia-pelvica", "pilates"],
-      pageUrl: "especialista.html?slug=ana-carolina"
+      id: 39558,
+      name: "Raquel Giovanella",
+      slug: "raquel-giovanella",
+      photo: "assets/images/professionals/raquel-giovanella.png",
+      specialty: "Esteticista | Especialista em Estética Avançada",
+      certifications: "Raquel Giovanella oferece tratamentos estéticos voltados para a revitalização da pele e a harmonização facial. Seus procedimentos utilizam tecnologias e técnicas especializadas para promover resultados seguros e eficazes.",
+      education: "Tratamentos faciais e corporais personalizados. Procedimentos estéticos avançados com foco em resultados naturais e seguros.",
+      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, priorizando resultados naturais e duradouros.",
+      services: ["estetica-avancada"],
+      pageUrl: "especialista.html?slug=raquel-giovanella"
     },
     {
-      id: 39572,
-      name: "Amanda Arruda",
-      slug: "amanda-arruda",
-      photo: "assets/images/professionals/amanda-arruda.png",
-      specialty: "Fisioterapeuta | Instrutora de Pilates | Massoterapeuta",
-      certifications: "Amanda Arruda atua na promoção da saúde e qualidade de vida por meio do Pilates, auxiliando na reabilitação, fortalecimento muscular e alinhamento postural. Seus atendimentos são voltados para pessoas que buscam mais equilíbrio e consciência corporal.",
-      education: "Pilates: exercícios que melhoram a postura, aumentam a flexibilidade e fortalecem a musculatura, promovendo alinhamento corporal e prevenindo dores e lesões.",
-      experience: "Cada sessão é estruturada conforme a necessidade do paciente, proporcionando acompanhamento individualizado para alcançar os melhores resultados.",
-      services: ["pilates"],
-      pageUrl: "especialista.html?slug=amanda-arruda"
-    },
-    {
-      id: 39901,
-      name: "Juan",
-      slug: "juan",
-      photo: "",
-      specialty: "Informações em desenvolvimento",
-      certifications: "Informações em desenvolvimento",
-      education: "Perfil profissional em atualização",
-      experience: "Dados serão adicionados futuramente",
-      services: [],
-      pageUrl: "especialista.html?slug=juan"
-    },
-    {
-      id: 39902,
-      name: "Paula",
-      slug: "paula",
-      photo: "",
-      specialty: "Informações em desenvolvimento",
-      certifications: "Informações em desenvolvimento",
-      education: "Perfil profissional em atualização",
-      experience: "Dados serão adicionados futuramente",
-      services: [],
-      pageUrl: "especialista.html?slug=paula"
-    },
-    {
-      id: 39903,
-      name: "Marília",
-      slug: "marilia",
-      photo: "",
-      specialty: "Informações em desenvolvimento",
-      certifications: "Informações em desenvolvimento",
-      education: "Perfil profissional em atualização",
-      experience: "Dados serão adicionados futuramente",
-      services: [],
-      pageUrl: "especialista.html?slug=marilia"
+      id: 39556,
+      name: "Sabrina Stapasolla",
+      slug: "sabrina-stapasolla",
+      photo: "assets/images/professionals/sabrina-stapasolla.png",
+      specialty: "Fisioterapeuta | Osteopata",
+      certifications: "Sabrina atua com terapias manuais desde 2006. Formada em Fisioterapia e em Osteopatia pelo Instituto Brasileiro de Osteopatia (OIA – Bélgica), ela integra sua prática com conhecimentos que fortalecem a condução dos tratamentos. Como idealizadora da Clínica Lifessence, ela contribui para a estruturação de um espaço voltado à promoção da saúde e do bem-estar.",
+      education: "Atendimento fisioterapêutico e osteopático com abordagem integrativa. Técnicas manuais, mobilização articular e reabilitação funcional personalizada.",
+      experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, combinando fisioterapia convencional e princípios osteopáticos.",
+      services: ["osteopatia"],
+      pageUrl: "especialista.html?slug=sabrina-stapasolla"
     }
   ],
 
@@ -403,8 +429,8 @@ const LIFESSENCE = {
       benefits: ["Detalhes serão adicionados futuramente"],
       faqs: [],
       image: "",
-      icon: "",
-      professionals: [],
+      icon: "assets/images/icons/Nutricao.svg",
+      professionals: ["marilia-chagas"],
       pageUrl: "servico.html?slug=nutricao"
     }
   ],
@@ -480,8 +506,9 @@ function renderDoctorCard(doc) {
   const link = doc.pageUrl
     ? `<a href="${doc.pageUrl}" class="btn-profile">Ver perfil →</a>`
     : '';
+  const imgStyle = doc.photoPosition ? ` style="object-position:${doc.photoPosition}"` : '';
   const photoHtml = doc.photo
-    ? `<a href="${doc.pageUrl || '#'}"><img class="doctor-img" src="${doc.photo}" alt="Foto de ${doc.name}" loading="lazy"></a>`
+    ? `<a href="${doc.pageUrl || '#'}"><img class="doctor-img" src="${doc.photo}" alt="Foto de ${doc.name}" loading="lazy"${imgStyle}></a>`
     : `<div class="doctor-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>`;
   return `
     <div class="doctor-card fade-in">

@@ -365,7 +365,7 @@
   </svg>
 </a>
 
-<script src="assets/js/data.js?v=5"></script>
+<script src="assets/js/data.js?v=6"></script>
 <script src="assets/js/main.js?v=5"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="container profile-hero-inner">
         <div class="profile-photo-wrap">
           ${doc.photo
-            ? `<img class="profile-photo" src="${doc.photo}" alt="Foto de ${doc.name}" loading="eager">`
+            ? `<img class="profile-photo" src="${doc.photo}" alt="Foto de ${doc.name}" loading="eager"${doc.photoPosition ? ` style="object-position:${doc.photoPosition}"` : ''}>`
             : `<div class="profile-photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="64" height="64"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>`}
           <span class="profile-badge">${doc.specialty}</span>
         </div>
