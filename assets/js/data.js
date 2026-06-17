@@ -97,7 +97,7 @@ const LIFESSENCE = {
       name: "Juan Hilbert",
       slug: "juan-hilbert",
       photo: "assets/images/professionals/juan-hilbert.jpg?v=2",
-      photoPosition: "center 25%",
+      photoPosition: "center 40%",
       specialty: "Fisioterapeuta e Instrutor de Pilates",
       certifications: "Formado em Fisioterapia pela Universidade Federal de Santa Catarina (UFSC) e especialista em traumato-ortopedia.",
       education: "Aulas de Pilates com foco em movimento consciente, postura, fortalecimento e prevenção de lesões, respeitando as necessidades individuais.",
