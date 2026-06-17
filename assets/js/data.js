@@ -18,7 +18,7 @@ const LIFESSENCE = {
       education: "Pilates: exercícios que melhoram a postura, aumentam a flexibilidade e fortalecem a musculatura, promovendo alinhamento corporal e prevenindo dores e lesões.",
       experience: "Cada sessão é estruturada conforme a necessidade do paciente, proporcionando acompanhamento individualizado para alcançar os melhores resultados.",
       services: ["pilates"],
-      pageUrl: "especialista?slug=amanda-arruda"
+      pageUrl: "especialista.html?slug=amanda-arruda"
     },
     {
       id: 39570,
@@ -30,7 +30,7 @@ const LIFESSENCE = {
       education: "Fisioterapia Pélvica com avaliação e condução de tratamentos direcionados à saúde pélvica feminina. Pilates com sessões orientadas para fortalecimento, mobilidade e equilíbrio.",
       experience: "Prática que integra conhecimentos teóricos e práticos com contínua atualização profissional, com foco na saúde integral da mulher.",
       services: ["fisioterapia-pelvica", "pilates"],
-      pageUrl: "especialista?slug=ana-carolina"
+      pageUrl: "especialista.html?slug=ana-carolina"
     },
     {
       id: 39564,
@@ -42,7 +42,7 @@ const LIFESSENCE = {
       education: "Atendimento personalizado com técnicas como ventosaterapia, agulhamento seco, terapias manuais e eletroterapia. Inclui fisioterapia desportiva para prevenção e tratamento de lesões.",
       experience: "Atendimento estruturado para oferecer soluções eficientes e personalizadas, combinando técnicas variadas conforme a necessidade de cada paciente.",
       services: ["fisioterapia-esportiva"],
-      pageUrl: "especialista?slug=carolina-nazzari"
+      pageUrl: "especialista.html?slug=carolina-nazzari"
     },
     {
       id: 40761,
@@ -66,7 +66,7 @@ const LIFESSENCE = {
       education: "Pilates Solo com Acessórios e Equipamentos. Fisioterapia indicada para reabilitação pós-lesão, dores musculoesqueléticas e condicionamento físico.",
       experience: "Atendimentos adaptados às necessidades de cada paciente, proporcionando cuidado direcionado e eficaz para a reabilitação e fortalecimento do corpo.",
       services: ["pilates", "massoterapia"],
-      pageUrl: "especialista?slug=emanuele-rizzon"
+      pageUrl: "especialista.html?slug=emanuele-rizzon"
     },
     {
       id: 39559,
@@ -78,7 +78,7 @@ const LIFESSENCE = {
       education: "Aulas individuais de Yoga adaptadas às necessidades e objetivos do aluno. Práticas fluídas e meditativas para equilíbrio físico, mental e emocional.",
       experience: "Atendimento personalizado com aulas estruturadas conforme o nível e os objetivos do aluno.",
       services: ["yoga"],
-      pageUrl: "especialista?slug=francielle-domingues"
+      pageUrl: "especialista.html?slug=francielle-domingues"
     },
     {
       id: 39563,
@@ -90,20 +90,20 @@ const LIFESSENCE = {
       education: "A acupuntura é uma prática da medicina tradicional chinesa que utiliza agulhas finas para estimular pontos específicos do corpo, promovendo equilíbrio energético, alívio da dor e bem-estar.",
       experience: "Prática baseada na compreensão individualizada do paciente, utilizando os conhecimentos adquiridos ao longo da formação para contribuir com o equilíbrio e o bem-estar.",
       services: ["acupuntura"],
-      pageUrl: "especialista?slug=gabrielly-rodrigues"
+      pageUrl: "especialista.html?slug=gabrielly-rodrigues"
     },
     {
       id: 39901,
       name: "Juan Hilbert",
       slug: "juan-hilbert",
       photo: "assets/images/professionals/juan-hilbert.jpg?v=2",
-      photoPosition: "center 40%",
+      photoPosition: "center 25%",
       specialty: "Fisioterapeuta e Instrutor de Pilates",
       certifications: "Formado em Fisioterapia pela Universidade Federal de Santa Catarina (UFSC) e especialista em traumato-ortopedia.",
       education: "Aulas de Pilates com foco em movimento consciente, postura, fortalecimento e prevenção de lesões, respeitando as necessidades individuais.",
       experience: "Acompanhamento focado na evolução segura e eficiente, promovendo um espaço de aprendizado e bem-estar.",
       services: ["pilates"],
-      pageUrl: "especialista?slug=juan-hilbert"
+      pageUrl: "especialista.html?slug=juan-hilbert"
     },
     {
       id: 39562,
@@ -115,7 +115,7 @@ const LIFESSENCE = {
       education: "Avaliação e tratamento de condições podológicas. Tratamento com laser para micose nas unhas. Procedimentos para correção de unha encravada e calosidades.",
       experience: "Atuação fundamentada em conhecimentos técnicos adquiridos durante sua formação. A prática clínica é orientada pela análise cuidadosa de cada caso.",
       services: ["podologia"],
-      pageUrl: "especialista?slug=lidia-castilhos"
+      pageUrl: "especialista.html?slug=lidia-castilhos"
     },
     {
       id: 39543,
@@ -127,7 +127,7 @@ const LIFESSENCE = {
       education: "Psicoterapia individual com base na Terapia Cognitivo-Comportamental (TCC). Atendimento especializado para infância e adolescência. Intervenção terapêutica para ansiedade, depressão e transtornos emocionais.",
       experience: "Sessões personalizadas de acordo com as necessidades do paciente. Uso de técnicas da TCC para promover mudanças nos padrões de pensamento e comportamento.",
       services: ["psicologia"],
-      pageUrl: "especialista?slug=lucas-pezzi"
+      pageUrl: "especialista.html?slug=lucas-pezzi"
     },
     {
       id: 39555,
@@ -139,7 +139,7 @@ const LIFESSENCE = {
       education: "Atendimento baseado em princípios osteopáticos, com foco na avaliação e condução dos tratamentos conforme as necessidades individuais de cada paciente.",
       experience: "Maira trabalha com métodos que unem sólida formação acadêmica e prática clínica. Sua condução dos tratamentos é orientada pela análise individualizada de cada caso.",
       services: ["osteopatia"],
-      pageUrl: "especialista?slug=maira-tonetta"
+      pageUrl: "especialista.html?slug=maira-tonetta"
     },
     {
       id: 39903,
@@ -151,7 +151,7 @@ const LIFESSENCE = {
       education: "Análise de contexto: Seus exames, seu histórico e sua rotina real são o ponto de partida. Educação, não apenas prescrição: Você entende o porquê de cada escolha. A meta é autonomia, segurança e clareza nas decisões do dia a dia.",
       experience: "Foco na alta: Meu trabalho é para que você evolua até não depender mais de mim. Independência alimentar também é cuidado. Consultas estratégicas, plano adaptado à sua realidade, receitas possíveis e suporte para dúvidas.",
       services: ["nutricao"],
-      pageUrl: "especialista?slug=marilia-chagas"
+      pageUrl: "especialista.html?slug=marilia-chagas"
     },
     {
       id: 40764,
@@ -176,7 +176,7 @@ const LIFESSENCE = {
       education: "Meu objetivo aqui na Life é oferecer um atendimento humanizado e por meio dele promover flexibilidade, equilíbrio, maior força muscular e resistência.",
       experience: "Estou animada para fazer parte da sua jornada, promovendo saúde, movimento e qualidade de vida através do Pilates.",
       services: ["pilates"],
-      pageUrl: "especialista?slug=paula-simoes"
+      pageUrl: "especialista.html?slug=paula-simoes"
     },
     {
       id: 39569,
@@ -188,7 +188,7 @@ const LIFESSENCE = {
       education: "Tratamentos faciais (clareamento, rugas, flacidez, acne, limpeza de pele, toxina botulínica, bioestimuladores de colágeno, preenchimento, fios de PDO). Tratamentos corporais (celulite, gordura localizada, flacidez).",
       experience: "Prática que integra conhecimentos teóricos e práticos adquiridos na formação acadêmica e na contínua atualização profissional.",
       services: ["estetica-avancada"],
-      pageUrl: "especialista?slug=priscila-pail"
+      pageUrl: "especialista.html?slug=priscila-pail"
     },
     {
       id: 39558,
@@ -200,7 +200,7 @@ const LIFESSENCE = {
       education: "Tratamentos faciais e corporais personalizados. Procedimentos estéticos avançados com foco em resultados naturais e seguros.",
       experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, priorizando resultados naturais e duradouros.",
       services: ["estetica-avancada"],
-      pageUrl: "especialista?slug=raquel-giovanella"
+      pageUrl: "especialista.html?slug=raquel-giovanella"
     },
     {
       id: 39556,
@@ -212,7 +212,7 @@ const LIFESSENCE = {
       education: "Atendimento fisioterapêutico e osteopático com abordagem integrativa. Técnicas manuais, mobilização articular e reabilitação funcional personalizada.",
       experience: "Cada tratamento é planejado conforme as características e objetivos de cada paciente, combinando fisioterapia convencional e princípios osteopáticos.",
       services: ["osteopatia"],
-      pageUrl: "especialista?slug=sabrina-stapasolla"
+      pageUrl: "especialista.html?slug=sabrina-stapasolla"
     }
   ],
 
@@ -269,7 +269,7 @@ const LIFESSENCE = {
       image: "assets/images/services/pilates.webp",
       icon: "assets/images/icons/Pilates.svg",
       professionals: ["emanuele-rizzon", "amanda-arruda", "ana-carolina"],
-      pageUrl: "servico?slug=pilates"
+      pageUrl: "servico.html?slug=pilates"
     },
     {
       id: 39129,
@@ -286,7 +286,7 @@ const LIFESSENCE = {
       image: "assets/images/services/fisioterapia-esportiva.webp",
       icon: "assets/images/icons/Fisioterapia-Esportiva.svg",
       professionals: ["carolina-nazzari"],
-      pageUrl: "servico?slug=fisioterapia-esportiva"
+      pageUrl: "servico.html?slug=fisioterapia-esportiva"
     },
     {
       id: 39176,
@@ -303,7 +303,7 @@ const LIFESSENCE = {
       image: "assets/images/services/osteopatia.webp",
       icon: "assets/images/icons/Osteopatia.svg",
       professionals: ["maira-tonetta", "sabrina-stapasolla"],
-      pageUrl: "servico?slug=osteopatia"
+      pageUrl: "servico.html?slug=osteopatia"
     },
     {
       id: 39502,
@@ -320,7 +320,7 @@ const LIFESSENCE = {
       image: "assets/images/services/fisioterapia-pelvica.webp",
       icon: "assets/images/icons/Fisioterapia-Pelvica.svg",
       professionals: ["ana-carolina"],
-      pageUrl: "servico?slug=fisioterapia-pelvica"
+      pageUrl: "servico.html?slug=fisioterapia-pelvica"
     },
     {
       id: 39508,
@@ -337,7 +337,7 @@ const LIFESSENCE = {
       image: "assets/images/services/estetica-avancada.webp",
       icon: "assets/images/icons/Estetica.svg",
       professionals: ["raquel-giovanella", "priscila-pail"],
-      pageUrl: "servico?slug=estetica-avancada"
+      pageUrl: "servico.html?slug=estetica-avancada"
     },
     {
       id: 39756,
@@ -350,7 +350,7 @@ const LIFESSENCE = {
       image: "assets/images/services/massoterapia.webp",
       icon: "assets/images/icons/Massoterapia.svg",
       professionals: ["emanuele-rizzon"],
-      pageUrl: "servico?slug=massoterapia"
+      pageUrl: "servico.html?slug=massoterapia"
     },
     {
       id: 39510,
@@ -367,7 +367,7 @@ const LIFESSENCE = {
       image: "assets/images/services/podologia.webp",
       icon: "assets/images/icons/Podologia.svg",
       professionals: ["lidia-castilhos"],
-      pageUrl: "servico?slug=podologia"
+      pageUrl: "servico.html?slug=podologia"
     },
     {
       id: 39511,
@@ -384,7 +384,7 @@ const LIFESSENCE = {
       image: "assets/images/services/psicologia.webp",
       icon: "assets/images/icons/Psicologia.svg",
       professionals: ["lucas-pezzi"],
-      pageUrl: "servico?slug=psicologia"
+      pageUrl: "servico.html?slug=psicologia"
     },
     {
       id: 39512,
@@ -401,7 +401,7 @@ const LIFESSENCE = {
       image: "assets/images/services/acupuntura.webp",
       icon: "assets/images/icons/Acupuntura.svg",
       professionals: ["gabrielly-rodrigues"],
-      pageUrl: "servico?slug=acupuntura"
+      pageUrl: "servico.html?slug=acupuntura"
     },
     {
       id: 39513,
@@ -418,7 +418,7 @@ const LIFESSENCE = {
       image: "assets/images/services/yoga.webp",
       icon: "assets/images/icons/Yoga.svg",
       professionals: ["francielle-domingues"],
-      pageUrl: "servico?slug=yoga"
+      pageUrl: "servico.html?slug=yoga"
     },
     {
       id: 39910,
@@ -431,7 +431,7 @@ const LIFESSENCE = {
       image: "",
       icon: "assets/images/icons/Nutricao.svg",
       professionals: ["marilia-chagas"],
-      pageUrl: "servico?slug=nutricao"
+      pageUrl: "servico.html?slug=nutricao"
     }
   ],
 
