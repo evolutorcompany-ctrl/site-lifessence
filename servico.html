@@ -362,7 +362,7 @@
   </svg>
 </a>
 
-<script src="assets/js/data.js?v=6"></script>
+<script src="assets/js/data.js?v=7"></script>
 <script src="assets/js/main.js?v=5"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -465,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${pros.map(doc => `
             <div class="svc-pro-card fade-in">
               ${doc.photo
-                ? `<a href="${doc.pageUrl}"><img class="svc-pro-img" src="${doc.photo}" alt="Foto de ${doc.name}" loading="lazy"${doc.photoPosition ? ` style="object-position:${doc.photoPosition}"` : ''}></a>`
+                ? `<a href="${doc.pageUrl}"><img class="svc-pro-img" src="${doc.photo}" alt="Foto de ${doc.name}" loading="lazy"${doc.photoPosition ? ` style="object-position:${doc.photoPosition} !important;"` : ''}></a>`
                 : `<div class="svc-pro-img-placeholder">${personSvg}</div>`}
               <div class="svc-pro-body">
                 <h5>${doc.name}</h5>

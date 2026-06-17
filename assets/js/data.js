@@ -96,7 +96,7 @@ const LIFESSENCE = {
       id: 39901,
       name: "Juan Hilbert",
       slug: "juan-hilbert",
-      photo: "assets/images/professionals/juan-hilbert.jpg",
+      photo: "assets/images/professionals/juan-hilbert.jpg?v=2",
       photoPosition: "center 25%",
       specialty: "Fisioterapeuta e Instrutor de Pilates",
       certifications: "Formado em Fisioterapia pela Universidade Federal de Santa Catarina (UFSC) e especialista em traumato-ortopedia.",
@@ -169,7 +169,7 @@ const LIFESSENCE = {
       id: 39902,
       name: "Paula Simões",
       slug: "paula-simoes",
-      photo: "assets/images/professionals/paula-simoes.jpg",
+      photo: "assets/images/professionals/paula-simoes.jpg?v=2",
       photoPosition: "center 12%",
       specialty: "Fisioterapeuta e Instrutora de Pilates",
       certifications: "Formada em Fisioterapia pela Universidade FEEVALE, acredito que o movimento é uma ferramenta poderosa para promover saúde, qualidade de vida e autonomia.",
@@ -506,7 +506,7 @@ function renderDoctorCard(doc) {
   const link = doc.pageUrl
     ? `<a href="${doc.pageUrl}" class="btn-profile">Ver perfil →</a>`
     : '';
-  const imgStyle = doc.photoPosition ? ` style="object-position:${doc.photoPosition}"` : '';
+  const imgStyle = doc.photoPosition ? ` style="object-position:${doc.photoPosition} !important;"` : '';
   const photoHtml = doc.photo
     ? `<a href="${doc.pageUrl || '#'}"><img class="doctor-img" src="${doc.photo}" alt="Foto de ${doc.name}" loading="lazy"${imgStyle}></a>`
     : `<div class="doctor-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>`;
