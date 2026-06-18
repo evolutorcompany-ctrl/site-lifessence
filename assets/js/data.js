@@ -422,13 +422,22 @@ const LIFESSENCE = {
     },
     {
       id: 39910,
-      name: "Nutrição",
+      name: "Nutrição Clínica",
       slug: "nutricao",
-      description: "Informações em breve.",
-      longDescription: "Conteúdo em desenvolvimento.",
-      benefits: ["Detalhes serão adicionados futuramente"],
-      faqs: [],
-      image: "",
+      description: "A Nutrição Clínica tem como objetivo promover saúde, prevenir doenças e melhorar a qualidade de vida por meio de uma alimentação personalizada.",
+      longDescription: "A Nutrição Clínica tem como objetivo promover saúde, prevenir doenças e melhorar a qualidade de vida por meio de uma alimentação personalizada. A partir da avaliação do histórico de saúde, exames, rotina e hábitos alimentares, desenvolvemos estratégias nutricionais adequadas às necessidades de cada pessoa. A abordagem busca identificar e tratar desequilíbrios nutricionais e metabólicos, auxiliando no funcionamento adequado do organismo e na promoção do bem-estar de forma sustentável.",
+      benefits: [
+        "Atendimento individualizado",
+        "Plano alimentar adaptado à rotina e aos objetivos do paciente",
+        "Foco na prevenção e no tratamento das causas dos desequilíbrios de saúde",
+        "Educação nutricional para promover hábitos saudáveis a longo prazo"
+      ],
+      faqs: [
+        { q: "Para quem é indicado?", a: "O atendimento é destinado a adultos a partir de 18 anos, sem limite máximo de idade, que desejam melhorar sua saúde, prevenir doenças ou controlar condições já existentes por meio da alimentação." },
+        { q: "Quais as áreas de atuação?", a: "Atuamos em saúde digestiva, doenças crônicas (diabetes, hipertensão), síndrome metabólica e esteatose hepática, alterações da tireoide, dores articulares relacionadas à inflamação e melhora da disposição e sono." },
+        { q: "A nutrição clínica possui contraindicações?", a: "A nutrição não possui contraindicações, pois todos precisam se alimentar. O que existem são estratégias específicas para cada patologia, priorizando a individualidade de cada paciente." }
+      ],
+      image: "assets/images/services/nutricao.webp",
       icon: "assets/images/icons/Nutricao.svg",
       professionals: ["marilia-chagas"],
       pageUrl: "servico.html?slug=nutricao"
