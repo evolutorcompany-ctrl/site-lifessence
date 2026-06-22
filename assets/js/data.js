@@ -425,7 +425,7 @@ const LIFESSENCE = {
       name: "Nutrição Clínica",
       slug: "nutricao",
       description: "A Nutrição Clínica tem como objetivo promover saúde, prevenir doenças e melhorar a qualidade de vida por meio de uma alimentação personalizada.",
-      longDescription: "A Nutrição Clínica tem como objetivo promover saúde, prevenir doenças e melhorar a qualidade de vida por meio de uma alimentação personalizada. A partir da avaliação do histórico de saúde, exames, rotina e hábitos alimentares, desenvolvemos estratégias nutricionais adequadas às necessidades de cada pessoa. A abordagem busca identificar e tratar desequilíbrios nutricionais e metabólicos, auxiliando no funcionamento adequado do organismo e na promoção do bem-estar de forma sustentável.",
+      longDescription: "A Nutrição Clínica tem como objetivo promover saúde, prevenir doenças e melhorar a qualidade de vida por meio de uma alimentação personalizada. Desenvolvemos estratégias nutricionais para tratar desequilíbrios metabólicos, auxiliando no funcionamento adequado do organismo e na promoção do bem-estar de forma sustentável.",
       benefits: [
         "Atendimento individualizado",
         "Plano alimentar adaptado à rotina e aos objetivos do paciente",
