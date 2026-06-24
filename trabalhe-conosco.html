@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="assets/images/hero-sobre-v2.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/images/atriade-espaco.webp" as="image" fetchpriority="high">
   <link rel="preload" href="assets/fonts/publicaplay-thin.ttf" as="font" type="font/truetype" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trabalhe Conosco — Lifessence</title>
-  <meta name="description" content="Conheça a Lifessence: nossa missão, valores e a história de uma clínica dedicada ao cuidado integral e humanizado em Caxias do Sul, RS.">
+  <meta name="description" content="Alugue uma sala na Clínica Lifessence e atenda seus pacientes em um espaço moderno, humanizado e multidisciplinar em Caxias do Sul, RS. Coworking e serviços adicionais disponíveis.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -15,6 +15,304 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+  <style>
+    /* ── Estilos exclusivos desta página ── */
+    .tc-areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .tc-area-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      background: var(--color-bg2);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-text);
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .tc-area-item:hover {
+      border-color: var(--color-primary);
+      box-shadow: 0 2px 12px rgba(123,58,147,.12);
+    }
+    .tc-area-item svg {
+      flex-shrink: 0;
+      color: var(--color-primary);
+    }
+
+    .tc-modalities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .tc-modality-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      padding: 36px 32px;
+      background: var(--color-bg);
+      transition: box-shadow .25s, border-color .25s, transform .25s;
+    }
+    .tc-modality-card:hover {
+      box-shadow: 0 8px 32px rgba(123,58,147,.13);
+      border-color: var(--color-primary);
+      transform: translateY(-3px);
+    }
+    .tc-modality-card.featured {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #fff;
+    }
+    .tc-modality-card.featured h3,
+    .tc-modality-card.featured p,
+    .tc-modality-card.featured li {
+      color: #fff;
+    }
+    .tc-modality-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.2);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+    }
+    .tc-modality-card h3 {
+      font-size: 1.45rem;
+      margin-bottom: 12px;
+      color: var(--color-heading);
+    }
+    .tc-modality-card p {
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .tc-modality-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .tc-modality-card ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+    .tc-modality-card ul li svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .tc-modality-card.featured ul li svg {
+      color: #fff;
+    }
+    .tc-modality-card ul li svg:not(.featured svg) {
+      color: var(--color-primary);
+    }
+
+    .tc-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .tc-service-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      transition: box-shadow .25s, border-color .25s, transform .25s;
+    }
+    .tc-service-card:hover {
+      box-shadow: 0 8px 32px rgba(123,58,147,.13);
+      border-color: var(--color-primary);
+      transform: translateY(-3px);
+    }
+    .tc-service-card .tc-svc-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+    }
+    .tc-service-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: var(--color-heading);
+    }
+    .tc-service-card p {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .tc-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 40px;
+    }
+    .tc-gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .tc-gallery img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 32px rgba(0,0,0,.18);
+    }
+    .tc-gallery .tc-gallery-tall {
+      grid-row: span 2;
+      height: 452px;
+    }
+    @media (max-width: 768px) {
+      .tc-gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+      .tc-gallery .tc-gallery-tall {
+        grid-row: span 1;
+        height: 200px;
+      }
+      .tc-gallery img {
+        height: 160px;
+      }
+    }
+    @media (max-width: 500px) {
+      .tc-areas-grid {
+        grid-template-columns: 1fr;
+      }
+      .tc-gallery {
+        grid-template-columns: 1fr;
+      }
+      .tc-gallery img { height: 200px; }
+      .tc-gallery .tc-gallery-tall { height: 200px; }
+    }
+
+    /* FAQ accordion */
+    .tc-faq { margin-top: 40px; display: flex; flex-direction: column; gap: 12px; }
+    .tc-faq-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--color-bg);
+    }
+    .tc-faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-heading);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: background .2s;
+    }
+    .tc-faq-question:hover { background: var(--color-bg2); }
+    .tc-faq-question svg {
+      flex-shrink: 0;
+      transition: transform .3s;
+      color: var(--color-primary);
+    }
+    .tc-faq-item.open .tc-faq-question svg { transform: rotate(45deg); }
+    .tc-faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .35s ease;
+      padding: 0 24px;
+    }
+    .tc-faq-item.open .tc-faq-answer {
+      max-height: 400px;
+      padding: 0 24px 20px;
+    }
+    .tc-faq-answer p {
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      font-size: 0.95rem;
+    }
+
+    /* Highlights banner */
+    .tc-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+    }
+    .tc-highlight-item {
+      padding: 40px 32px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,.15);
+    }
+    .tc-highlight-item:last-child { border-right: none; }
+    .tc-highlight-item .tc-hi-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(255,255,255,.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .tc-highlight-item h4 { color: #fff; font-size: 1rem; margin-bottom: 6px; }
+    .tc-highlight-item p { color: rgba(255,255,255,.8); font-size: 0.87rem; line-height: 1.6; }
+    @media (max-width: 768px) {
+      .tc-highlights { grid-template-columns: 1fr 1fr; }
+      .tc-highlight-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.15); }
+      .tc-highlight-item:nth-child(even) { border-left: 1px solid rgba(255,255,255,.15); }
+      .tc-highlight-item:last-child { border-bottom: none; }
+    }
+    @media (max-width: 500px) {
+      .tc-highlights { grid-template-columns: 1fr; }
+      .tc-highlight-item { border-left: none !important; border-right: none !important; }
+    }
+
+    /* Contact info strip */
+    .tc-contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .tc-contact-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .tc-contact-info .tc-ci-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--color-primary-light, rgba(123,58,147,.08));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--color-primary);
+    }
+    .tc-contact-info .tc-ci-text { font-size: 0.92rem; line-height: 1.5; }
+    .tc-contact-info .tc-ci-text strong { display: block; color: var(--color-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2px; }
+    .tc-contact-info .tc-ci-text a { color: var(--color-text); text-decoration: none; }
+    .tc-contact-info .tc-ci-text a:hover { color: var(--color-primary); }
+  </style>
 </head>
 <body>
 
@@ -29,12 +327,12 @@
     </a>
     <ul class="nav-menu">
       <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html" >Sobre</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
       <li><a href="especialistas.html">Especialistas</a></li>
       <li><a href="servicos.html">Serviços</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contato.html">Contato</a></li>
-          <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+          <li><a href="trabalhe-conosco.html" class="active">Trabalhe Conosco</a></li>
     </ul>
     <div class="nav-cta">
       <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
@@ -66,22 +364,439 @@
         <span class="sep">›</span>
         <span>Trabalhe Conosco</span>
       </nav>
-      <p class="label">Seja um Profissional Lifessence</p>
+      <p class="label">Espaço para Profissionais de Saúde</p>
       <h1>Trabalhe Conosco</h1>
-      <p>Junte-se a uma equipe dedicada ao cuidado integral e bem-estar.</p>
+      <p>Você é profissional autônomo e precisa do melhor espaço personalizado? Conheça as opções de locação de salas da Clínica Lifessence.</p>
     </div>
   </section>
 
-  <!-- Content -->
+  <!-- Introdução -->
   <section class="section-gap">
-    <div class="container text-center" style="max-width:800px; margin:0 auto;">
-      <h2 class="fade-in">Oportunidades Futuras</h2>
-      <p class="fade-in delay-1" style="font-size: 1.1rem; line-height: 1.8; margin-top: 24px; color: var(--color-text-muted);">
-        Estamos preparando novas oportunidades para integrar profissionais à equipe Lifessence. 
-        Em breve disponibilizaremos mais informações e um espaço exclusivo para envio de currículo.
-      </p>
-      <div style="margin-top: 40px;" class="fade-in delay-2">
-        <a href="contato.html" class="btn btn-primary">Fale Conosco</a>
+    <div class="container">
+      <div class="about-section">
+        <div class="about-text fade-in-left">
+          <p class="label">Bem-vindo à Lifessence</p>
+          <h2 style="color:var(--color-text); margin-bottom:24px;">Seu espaço dedicado à saúde e bem-estar</h2>
+          <p style="margin-bottom:20px;">Seja bem-vindo à Clínica Lifessence, seu espaço dedicado à saúde e bem-estar localizado <strong>no coração do bairro Rio Branco</strong>, em Caxias do Sul, Rio Grande do Sul.</p>
+          <p style="margin-bottom:20px;">Na Clínica Lifessence, oferecemos salas equipadas, modernas e confortáveis com diferentes tamanhos e configurações para atender às necessidades específicas de cada profissional autônomo de Saúde e Bem-estar.</p>
+          <p style="margin-bottom:20px;">Concentre-se no seu atendimento e deixa o resto conosco. Atendimento humanizado e personalizado em um ambiente integrado e multidisciplinar.</p>
+          <p>Locação de salas com serviços adicionais para profissionais autônomos.</p>
+        </div>
+        <div class="about-img-wrap fade-in-right">
+          <img src="assets/images/tc-espaco-1.jpg" alt="Espaço Lifessence para profissionais" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+
+      <!-- Vídeo Conheça a Life -->
+      <div class="fade-in" style="margin-top:48px;">
+        <p class="label" style="text-align:center; margin-bottom:16px;">Descubra nossos espaços</p>
+        <h2 style="text-align:center; margin-bottom:24px;">Descubra nossos Espaços Integrados para Profissionais de Saúde e Bem-Estar</h2>
+        <div style="position:relative; border-radius:var(--radius-lg); overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,.18); background:#000;">
+          <video
+            id="life-video"
+            controls
+            preload="metadata"
+            style="width:100%; height:auto; display:block; border-radius:var(--radius-lg);"
+            aria-label="Vídeo Conheça a Life — apresentação da Clínica Lifessence">
+            <source src="assets/videos/Conheca-a-Life.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Banner -->
+  <section style="background:var(--color-primary); padding:0;">
+    <div class="tc-highlights">
+      <div class="tc-highlight-item fade-in">
+        <div class="tc-hi-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h4>Flexibilidade de Horários</h4>
+        <p>Atenda conforme sua disponibilidade, com agendamentos gerenciados pela nossa equipe</p>
+      </div>
+      <div class="tc-highlight-item fade-in delay-1">
+        <div class="tc-hi-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h4>Infraestrutura Completa</h4>
+        <p>Salas equipadas e confortáveis em uma clínica com toda a estrutura de que você precisa</p>
+      </div>
+      <div class="tc-highlight-item fade-in delay-2">
+        <div class="tc-hi-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>Equipe Multidisciplinar</h4>
+        <p>Integração com uma equipe qualificada de profissionais da saúde e bem-estar</p>
+      </div>
+      <div class="tc-highlight-item fade-in delay-3">
+        <div class="tc-hi-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h4>Atendimento Humanizado</h4>
+        <p>Ambiente acolhedor que valoriza profissional e paciente em cada detalhe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Áreas Atendidas -->
+  <section class="section-gap" style="background:var(--color-bg2);">
+    <div class="container">
+      <div class="section-intro">
+        <p class="label fade-in">Profissionais bem-vindos</p>
+        <h2 class="fade-in delay-1">Estamos de portas abertas para profissionais de diferentes áreas</h2>
+        <p class="fade-in delay-2" style="max-width:620px; margin:16px auto 0; color:var(--color-text-muted);">Profissionais qualificados em diversas áreas de saúde e bem-estar são bem-vindos para alugar salas na Clínica Lifessence.</p>
+      </div>
+      <div class="tc-areas-grid">
+        <div class="tc-area-item fade-in">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Fisioterapeuta
+        </div>
+        <div class="tc-area-item fade-in delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Nutricionista
+        </div>
+        <div class="tc-area-item fade-in delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Psicólogo / Psicanalista
+        </div>
+        <div class="tc-area-item fade-in delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Psicólogo Organizacional (RH)
+        </div>
+        <div class="tc-area-item fade-in delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Psicopedagoga
+        </div>
+        <div class="tc-area-item fade-in delay-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Médico Geriatra
+        </div>
+        <div class="tc-area-item fade-in delay-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Médico da Família / Clínico Geral
+        </div>
+        <div class="tc-area-item fade-in">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Medicina Integrativa
+        </div>
+        <div class="tc-area-item fade-in delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Homeopata
+        </div>
+        <div class="tc-area-item fade-in delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Endocrinologista
+        </div>
+        <div class="tc-area-item fade-in delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Biomédica
+        </div>
+        <div class="tc-area-item fade-in delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Esteticista
+        </div>
+        <div class="tc-area-item fade-in delay-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Coaching
+        </div>
+        <div class="tc-area-item fade-in delay-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Consultor
+        </div>
+        <div class="tc-area-item fade-in">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Terapeuta de Reiki
+        </div>
+        <div class="tc-area-item fade-in delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Terapeuta de Barras de Access
+        </div>
+        <div class="tc-area-item fade-in delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Áreas Holísticas (Ayurveda e afins)
+        </div>
+        <div class="tc-area-item fade-in delay-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          E muitas outras áreas afins
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modalidades de Locação -->
+  <section class="section-gap">
+    <div class="container">
+      <div class="section-intro">
+        <p class="label fade-in">Escolha sua modalidade</p>
+        <h2 class="fade-in delay-1">Modalidades de Locação Adaptadas às suas Necessidades</h2>
+        <p class="fade-in delay-2" style="max-width:640px; margin:16px auto 0; color:var(--color-text-muted);">Temos duas opções de locação: <strong>Coworking</strong> ou <strong>Plus com Serviços Adicionais</strong>. Escolha a que melhor se adapta às suas necessidades e receba benefícios exclusivos.</p>
+      </div>
+      <div class="tc-modalities">
+
+        <!-- Coworking -->
+        <div class="tc-modality-card fade-in">
+          <h3>Coworking</h3>
+          <p>Alugue a sala conforme sua necessidade, sem vínculo direto com a clínica. Ideal para quem busca flexibilidade e infraestrutura de qualidade.</p>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Salas modernas e equipadas
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Localização privilegiada no bairro Rio Branco
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Flexibilidade de horários
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Ambiente integrado e multidisciplinar
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Sem vínculo empregatício
+            </li>
+          </ul>
+          <a href="https://wa.me/5554981541639?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Coworking%20na%20Lifessence" target="_blank" rel="noopener" class="btn btn-primary">Quero saber mais</a>
+        </div>
+
+        <!-- Plus -->
+        <div class="tc-modality-card featured fade-in delay-1">
+          <span class="tc-modality-badge">Mais completo</span>
+          <h3>Plus com Serviços Adicionais</h3>
+          <p>Além da sala, você tem acesso a serviços que impulsionam sua prática clínica, permitindo que você foque 100% no atendimento.</p>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Tudo do plano Coworking
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Sistema de agendamento + CRM
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Serviços de duas secretárias
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Gestão de marketing e redes sociais da clínica
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Assessoria comercial especializada
+            </li>
+          </ul>
+          <a href="https://wa.me/5554981541639?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20plano%20Plus%20na%20Lifessence" target="_blank" rel="noopener" class="btn" style="background:#fff; color:var(--color-primary); font-weight:700;">Quero o plano Plus</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços Incluídos -->
+  <section class="section-gap" style="background:var(--color-bg2);">
+    <div class="container">
+      <div class="section-intro">
+        <p class="label fade-in">O que oferecemos</p>
+        <h2 class="fade-in delay-1">Serviços que facilitam seu dia a dia</h2>
+        <p class="fade-in delay-2" style="max-width:580px; margin:16px auto 0; color:var(--color-text-muted);">Para você focar no que mais importa: o atendimento ao seu paciente.</p>
+      </div>
+      <div class="tc-services-grid">
+        <div class="tc-service-card fade-in">
+          <img
+            src="assets/images/tc-espaco-2.jpg"
+            alt="Serviço de agendamento Lifessence"
+            class="tc-svc-img"
+            loading="lazy">
+          <h4>Serviço de Agendamento</h4>
+          <p>Realizado pelas secretárias da clínica, que gerenciam os horários de atendimento dos profissionais autônomos conforme suas preferências e disponibilidade.</p>
+        </div>
+        <div class="tc-service-card fade-in delay-1">
+          <img
+            src="assets/images/tc-espaco-3.jpg"
+            alt="Suporte de secretariado Lifessence"
+            class="tc-svc-img"
+            loading="lazy">
+          <h4>Suporte de Secretariado</h4>
+          <p>Para auxiliar na recepção, hospitalidade e encaminhamento dos clientes, garantindo um atendimento profissional e organizado.</p>
+        </div>
+        <div class="tc-service-card fade-in delay-2">
+          <img
+            src="assets/images/tc-espaco-4.jpg"
+            alt="Serviços administrativos adicionais Lifessence"
+            class="tc-svc-img"
+            loading="lazy">
+          <h4>Serviços Administrativos Adicionais</h4>
+          <p>Sistema de agendamentos e CRM, serviços de duas secretárias, gestão de marketing, divulgação nas redes sociais e orientação com assessoria comercial especializada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Espaços -->
+  <section class="section-gap">
+    <div class="container">
+      <div class="section-intro">
+        <p class="label fade-in">Nossa estrutura</p>
+        <h2 class="fade-in delay-1">Conheça sua nova estrutura</h2>
+        <p class="fade-in delay-2" style="max-width:540px; margin:16px auto 0; color:var(--color-text-muted);">Espaços modernos, acolhedores e preparados para o melhor atendimento.</p>
+      </div>
+      <div class="tc-gallery fade-in">
+        <img src="assets/images/tc-hero.jpg" alt="Espaço Lifessence" class="tc-gallery-tall" loading="lazy">
+        <img src="assets/images/tc-espaco-1.jpg" alt="Sala de atendimento Lifessence" loading="lazy">
+        <img src="assets/images/tc-espaco-6.jpg" alt="Ambiente Lifessence" loading="lazy">
+        <img src="assets/images/tc-espaco-5.jpg" alt="Instalações Lifessence" loading="lazy">
+        <img src="assets/images/atriade-espaco.webp" alt="Clínica Lifessence" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-gap" style="background:var(--color-bg2);">
+    <div class="container" style="max-width:800px;">
+      <div class="section-intro">
+        <p class="label fade-in">Dúvidas frequentes</p>
+        <h2 class="fade-in delay-1">Perguntas Frequentes</h2>
+        <p class="fade-in delay-2" style="color:var(--color-text-muted); margin-top:12px;">Clique nas perguntas para expandir</p>
+      </div>
+      <div class="tc-faq fade-in">
+
+        <div class="tc-faq-item">
+          <button class="tc-faq-question" id="faq-btn-1" aria-expanded="false" aria-controls="faq-answer-1">
+            Quais são os benefícios de alugar uma sala na Clínica Lifessence?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="tc-faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1">
+            <p>Alugar uma sala na Clínica Lifessence oferece diversos benefícios, incluindo flexibilidade de horários, infraestrutura completa, serviços adicionais opcionais e integração com uma equipe qualificada de profissionais da saúde e bem-estar.</p>
+          </div>
+        </div>
+
+        <div class="tc-faq-item">
+          <button class="tc-faq-question" id="faq-btn-2" aria-expanded="false" aria-controls="faq-answer-2">
+            Quais profissionais podem alugar salas na Clínica Lifessence?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="tc-faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2">
+            <p>Profissionais qualificados em diversas áreas de saúde e bem-estar são bem-vindos. Isso inclui Fisioterapeuta, Médico Geriatra, Psicólogo Organizacional (RH), Psicanalista, Psicopedagoga, Coaching, Terapeuta de Reiki, Terapeuta de Barras de Access, áreas Holísticas como Ayurveda, Nutricionista, Biomédica, Esteticista, Consultor, Homeopata, entre outros.</p>
+          </div>
+        </div>
+
+        <div class="tc-faq-item">
+          <button class="tc-faq-question" id="faq-btn-3" aria-expanded="false" aria-controls="faq-answer-3">
+            Quais são as modalidades de locação oferecidas pela Lifessence?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="tc-faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3">
+            <p>A Lifessence oferece duas modalidades de locação: <strong>Coworking</strong> e <strong>Plus com Serviços Adicionais</strong>. Na primeira, os profissionais alugam as salas sem vínculo direto com a clínica. Na segunda, têm acesso a serviços adicionais como sistema de agendamentos e CRM, serviços de duas secretárias, divulgação nas redes sociais da clínica e assessoria comercial especializada.</p>
+          </div>
+        </div>
+
+        <div class="tc-faq-item">
+          <button class="tc-faq-question" id="faq-btn-4" aria-expanded="false" aria-controls="faq-answer-4">
+            Qual é a localização da Clínica Lifessence?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="tc-faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4">
+            <p>A Clínica Lifessence está localizada no bairro Rio Branco, em Caxias do Sul, Rio Grande do Sul — uma região privilegiada e de fácil acesso na cidade. Uma zona nobre do bairro, na avenida principal, com alto fluxo de pessoas.</p>
+          </div>
+        </div>
+
+        <div class="tc-faq-item">
+          <button class="tc-faq-question" id="faq-btn-5" aria-expanded="false" aria-controls="faq-answer-5">
+            Como posso agendar uma visita para conhecer a Clínica Lifessence?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="tc-faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5">
+            <p>Para agendar uma visita e conhecer pessoalmente nossas instalações, entre em contato conosco através do WhatsApp ou pelo formulário na nossa página de contato. Estamos ansiosos para recebê-lo e mostrar como podemos ajudar a impulsionar sua prática profissional!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre a Lifessence -->
+  <section style="background:var(--color-primary); padding:80px 0;">
+    <div class="container text-center" style="max-width:860px;">
+      <blockquote class="fade-in serif" style="font-size:clamp(1.1rem,2.5vw,1.65rem); font-weight:300; color:#fff; line-height:1.7; font-style:italic;">
+        "Desde 2017, a Life surgiu com o propósito de beneficiar as pessoas de forma global, conectando em um mesmo local diversas especialidades com um objetivo em comum — a saúde e bem-estar integral. Acreditamos que tudo está conectado e que ao encontrarmos um equilíbrio entre os aspectos principais do nosso ser, encontraremos também, a <strong style="font-style:normal; letter-spacing:.04em;">ESSÊNCIA DAS NOSSAS VIDAS</strong>."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contato / CTA -->
+  <section class="section-gap">
+    <div class="container">
+      <div class="about-section">
+        <div class="about-text fade-in-left">
+          <p class="label">Entre em contato</p>
+          <h2 style="margin-bottom:20px;">Está interessado em alugar uma sala na Clínica Lifessence?</h2>
+          <p style="margin-bottom:28px;">Entre em contato conosco hoje mesmo para agendar uma visita, conhecer nossas instalações e descobrir como podemos ajudar a impulsionar sua prática profissional.</p>
+
+          <div class="tc-contact-strip">
+            <div class="tc-contact-info">
+              <div class="tc-ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="tc-ci-text">
+                <strong>Endereço</strong>
+                <a href="https://maps.app.goo.gl/nWPNwhh9NxgneZes5" target="_blank" rel="noopener">
+                  Av. Rio Branco, 1718<br>São Pelegrino, Caxias do Sul – RS
+                </a>
+              </div>
+            </div>
+            <div class="tc-contact-info">
+              <div class="tc-ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.35h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="tc-ci-text">
+                <strong>Telefone</strong>
+                <a href="tel:+5554981541639">(54) 98154-1639</a>
+              </div>
+            </div>
+            <div class="tc-contact-info">
+              <div class="tc-ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="tc-ci-text">
+                <strong>Horário</strong>
+                Segunda a Sexta: 08:00 às 19:30
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:36px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="https://wa.me/5554981541639?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20salas%20da%20Cl%C3%ADnica" target="_blank" rel="noopener" class="btn btn-primary">
+              Falar pelo WhatsApp
+            </a>
+            <a href="contato.html" class="btn btn-primary">Página de Contato</a>
+          </div>
+        </div>
+        <div class="about-img-wrap fade-in-right">
+          <img src="assets/images/tc-espaco-5.jpg" alt="Espaço Lifessence para profissionais" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="fade-in" style="margin-top:48px;">
+        <div style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,.12);">
+          <iframe
+            loading="lazy"
+            src="https://maps.google.com/maps?q=Lifessence%20Sa%C3%BAde%20e%20Bem-Estar&t=m&z=17&output=embed&iwloc=near"
+            title="Localização da Clínica Lifessence — Av. Rio Branco, 1718, São Pelegrino, Caxias do Sul – RS"
+            aria-label="Mapa de localização da Clínica Lifessence"
+            width="100%"
+            height="380"
+            style="display:block; border:0;"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -96,7 +811,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="footer-logo">Life<span>ssence</span></span>
+        <span class="footer-logo">Life<span>essence</span></span>
         <p class="footer-desc">Cuidados integrados e humanizados para o seu equilíbrio físico, mental e emocional.</p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/lifessencesaudeebemestar/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -154,7 +869,7 @@
             <div class="fci-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <div class="fci-text">Segunda a Sexta: 08:00 às 19:30<br>Sábado: 08:00 às 19:30</div>
+            <div class="fci-text">Segunda a Sexta: 08:00 às 19:30</div>
           </div>
           <div class="footer-contact-item">
             <div class="fci-icon">
@@ -185,15 +900,24 @@
 
 <script src="assets/js/data.js?v=10"></script>
 <script src="assets/js/main.js?v=7"></script>
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.tc-faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.tc-faq-item');
+      var isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.tc-faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.tc-faq-question').setAttribute('aria-expanded', 'false');
+      });
+      // Open clicked if it was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
