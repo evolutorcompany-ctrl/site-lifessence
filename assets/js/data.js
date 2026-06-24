@@ -13,7 +13,7 @@ const LIFESSENCE = {
       name: "Amanda Arruda",
       slug: "amanda-arruda",
       photo: "assets/images/professionals/amanda-arruda.png",
-      specialty: "Fisioterapeuta | Instrutora de Pilates | Massoterapeuta",
+      specialty: "Fisioterapeuta e Instrutora de Pilates",
       certifications: "Amanda Arruda atua na promoção da saúde e qualidade de vida por meio do Pilates, auxiliando na reabilitação, fortalecimento muscular e alinhamento postural. Seus atendimentos são voltados para pessoas que buscam mais equilíbrio e consciência corporal.",
       education: "Pilates: exercícios que melhoram a postura, aumentam a flexibilidade e fortalecem a musculatura, promovendo alinhamento corporal e prevenindo dores e lesões.",
       experience: "Cada sessão é estruturada conforme a necessidade do paciente, proporcionando acompanhamento individualizado para alcançar os melhores resultados.",
@@ -37,7 +37,7 @@ const LIFESSENCE = {
       name: "Carolina Nazzari",
       slug: "carolina-nazzari",
       photo: "assets/images/professionals/carolina-nazzari.png",
-      specialty: "Fisioterapeuta",
+      specialty: "Fisioterapeuta esportiva",
       certifications: "Especialização em Fisioterapia Esportiva (2022). Carolina Nazzari é fisioterapeuta formada desde 2016, com pós-graduação em Fisioterapia Manipulativa (técnicas manuais) concluída em 2018. Possui formação complementar em Pilates e diversos cursos voltados para técnicas manuais, liberação miofascial e movimentos funcionais. Seu atendimento é voltado para a recuperação e prevenção de disfunções musculoesqueléticas, promovendo a qualidade de vida por meio de abordagens terapêuticas adaptadas à necessidade de cada paciente.",
       education: "Atendimento personalizado com técnicas como ventosaterapia, agulhamento seco, terapias manuais e eletroterapia. Inclui fisioterapia desportiva para prevenção e tratamento de lesões.",
       experience: "Atendimento estruturado para oferecer soluções eficientes e personalizadas, combinando técnicas variadas conforme a necessidade de cada paciente.",
@@ -268,7 +268,7 @@ const LIFESSENCE = {
       ],
       image: "assets/images/services/pilates.webp",
       icon: "assets/images/icons/Pilates.svg",
-      professionals: ["emanuele-rizzon", "amanda-arruda", "ana-carolina"],
+      professionals: ["emanuele-rizzon", "amanda-arruda", "ana-carolina", "paula-simoes", "juan-hilbert"],
       pageUrl: "servico.html?slug=pilates"
     },
     {
@@ -502,7 +502,7 @@ const LIFESSENCE = {
     phone: "(54) 98154-1639",
     email: "lifessence@lifessence.com.br",
     address: "Avenida Rio Branco, 1718, Caxias do Sul, RS 95096-000",
-    hours: "Segunda a Sexta: 08:00 às 19:30 | Sábado: 08:00 às 19:30",
+    hours: "Segunda a Sexta: 08:00 às 19:30",
     instagram: "https://www.instagram.com/lifessencesaudeebemestar/",
     facebook: "https://www.facebook.com/lifessencesaudeebemestar/"
   }
@@ -525,7 +525,7 @@ function renderDoctorCard(doc) {
       <div class="doctor-info">
         <h5>${doc.name}</h5>
         <span class="doctor-specialty">${doc.specialty}</span>
-        ${doc.certifications ? `<p class="doctor-bio">${doc.certifications}</p>` : ''}
+        ${doc.certifications ? `<p class="doctor-bio${(doc.slug === 'clarice-ferreira' || doc.slug === 'milena-saibe') ? ' full-text' : ''}">${doc.certifications}</p>` : ''}
         ${link}
       </div>
     </div>`;

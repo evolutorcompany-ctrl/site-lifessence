@@ -969,10 +969,11 @@ textarea.form-control { height: 130px; resize: vertical; }
 .footer-brand {}
 .footer-logo {
   font-family: 'Publica Play', var(--font-body);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  -webkit-text-stroke: 0.8px currentColor;
-  color: var(--color-text);
+  -webkit-text-stroke: 0.7px currentColor;
+  color: var(--color-primary);
+  letter-spacing: -.5px;
   margin-bottom: 16px;
   display: block;
 }
@@ -2055,4 +2056,10 @@ textarea.form-control { height: 130px; resize: vertical; }
   .why-item:hover { transform: none; }
   .hero-card-list a:hover { transform: none; }
   .footer-col ul li a:hover { padding-left: 0; }
+}
+
+.doctor-bio.full-text {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
