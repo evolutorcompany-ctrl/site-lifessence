@@ -102,7 +102,7 @@ const LIFESSENCE = {
       certifications: "Formado em Fisioterapia pela Universidade Federal de Santa Catarina (UFSC) e especialista em traumato-ortopedia.",
       education: "Aulas de Pilates com foco em movimento consciente, postura, fortalecimento e prevenção de lesões, respeitando as necessidades individuais.",
       experience: "Acompanhamento focado na evolução segura e eficiente, promovendo um espaço de aprendizado e bem-estar.",
-      services: ["pilates"],
+      services: ["pilates", "fisioterapia-esportiva"],
       pageUrl: "especialista.html?slug=juan-hilbert"
     },
     {
@@ -175,7 +175,7 @@ const LIFESSENCE = {
       certifications: "Formada em Fisioterapia pela Universidade FEEVALE, acredito que o movimento é uma ferramenta poderosa para promover saúde, qualidade de vida e autonomia.",
       education: "Meu objetivo aqui na Life é oferecer um atendimento humanizado e por meio dele promover flexibilidade, equilíbrio, maior força muscular e resistência.",
       experience: "Estou animada para fazer parte da sua jornada, promovendo saúde, movimento e qualidade de vida através do Pilates.",
-      services: ["pilates"],
+      services: ["pilates", "fisioterapia-esportiva"],
       pageUrl: "especialista.html?slug=paula-simoes"
     },
     {
