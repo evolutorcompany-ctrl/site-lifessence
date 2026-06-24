@@ -1235,6 +1235,11 @@ textarea.form-control { height: 130px; resize: vertical; }
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.doctor-bio.full-text {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
 .doctor-socials { display: flex; gap: 8px; margin-bottom: 12px; }
 .doctor-socials a {
   width: 28px; height: 28px;
